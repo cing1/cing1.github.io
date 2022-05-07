@@ -1,17 +1,33 @@
+@media only screen and (max-width: 1140px) {
+    nav ul li a{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 990px){
+    .search-container{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 800px) {
-    body {
+    .navbar {
+        position: fixed;
+        display: flex;
+        height: 50px;
+        width: 96%;
+        align-items: center;
+        background-color: var(--color-nav);
+        border:solid 2px var(--color-1);
+        border-radius: 50vh;
+        margin: 5px 7px;
+        justify-content: center;
+        box-shadow: 0 0 10px var(--color-1);
     }
     .navbarm{
         display: flex;
         width: 100%;
-        height: 40px;
-        background: linear-gradient(to bottom, var(--color-1), var(--color-4));
-
+        align-content: space-between;
     }
-    @keyframes mymove {
-        {background-color: transparent;}
-    }
-
     .logo{
         display: flex;
         align-items: center;
@@ -23,38 +39,51 @@
         display: block;
         cursor: pointer;
         width:40px;
-        height: 40px;
-        right: 0px;
-        background: linear-gradient(to bottom, var(--color-1), var(--color-4));
+        height: 95%;
+        right: 10px;
         position: absolute;
-        justify-content: right;
     }
     .pad span {
-        background-color: blue;
+        background-color: var(--color-5);
         display: block;
-        height: 3px;
+        height: 4px;
         width: 28px;
         margin: 8px auto;
         border-radius: 2px;
     }
-    .navbar {
-        background: transparent;
-        position: fixed; 
-        display: flex;
+    .nav{
         flex-direction: column;
-        height: 300px;
-        width: 100%;
-        align-items: center;
-        
+        background: rgb(42, 17, 82);
+        width: 400px;
+        height: 800px;
+        padding: 0px 20px;
+        margin-top: 65px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        flex-wrap: wrap;
+        align-content: center;
+        transition: all 0.2s;
+    }
+    .nav-menu-visible{
+        display: none;
     }
 
 
     .navbarli{
+        display: flex;
         flex-direction: column;
-        padding: 20px 0px;
+        justify-content: flex-end;
+        padding: 20px 10px;
+        width: 150px;
+        height: 100%;
+
     }
     .navbarli li{
-        padding: 10px 0px;
+        border: 2px solid #837d83;
+        border-radius: 50vh;
+        padding: 8px 15px;
+        justify-content: center;
+        margin: 5px 0px;
     }
     nav ul li a{
         background: transparent;
@@ -65,20 +94,8 @@
         position: relative;
         
     }
-    .nav{
-        flex-direction: column;
-        background: rgb(42, 17, 82);
-        width: 100%;
-        height: 300px;
-        padding: 0px 20px;
-        border-bottom-right-radius: 15px;
-        border-bottom-left-radius: 15px;
-        transition: 1s;
-    }
+
     .search {
-        display: none;
-    }
-    .nav-menu-visible{
         display: none;
     }
 

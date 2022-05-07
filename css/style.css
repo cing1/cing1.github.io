@@ -1,6 +1,6 @@
 
 /* esto es un prueba par agit */
-
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 :root{
     --color-1: #0ff;
     --color-2: #2f69fd;
@@ -8,23 +8,25 @@
     --color-4: #ff00a5;
     --color-5: #ff5e00;
     --color-input: #fa1185d0;
+    --color-nav: #0a0c1c;
+    --color-bg: #1a1f47;
 }
 
 /* scroll bar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px rgb(70, 55, 207); 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #808383; 
+  background: var(--color-1);
   border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3e49ac; 
+  background: #ff00bf; 
 
 }
 
@@ -38,10 +40,15 @@
 .navbar {
     position: fixed;
     display: flex;
-    height: 40px;
-    width: 100%;
+    height: 50px;
+    width: 99%;
     align-items: center;
-    background: linear-gradient(to bottom, var(--color-1), rgba(146, 144, 148, 0.733));
+    background-color: var(--color-nav);
+    border:solid 2px var(--color-1);
+    border-radius: 50vh;
+    margin: 5px 7px;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--color-1);
 }
 .logo{
     display: flex;
@@ -74,8 +81,10 @@ nav ul li{
 	padding: 0px  10px;
 }
 nav ul li a{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
     background: transparent;
-	color: var(--color-3);
+	color: var(--color-1);
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
@@ -100,7 +109,7 @@ li:hover a::after {
 }
 nav ul li a:hover{
 	color: var(--color-4);
-	transition: .2s;
+	transition: .3s;
 }
 /* =====SEARCH COMPONENT===== */
 
@@ -111,10 +120,10 @@ nav ul li a:hover{
 }
 .searchTerm {
     width: 100%;
-    background:#6a7270;
-    border-top: 3px solid #ff9102;
-    border-left: 3px solid #ff9102;
-    border-bottom: 3px solid #ff9102;
+    background:var(--color-1);
+    border-top: 3px solid var(--color-5);
+    border-left: 3px solid var(--color-5);
+    border-bottom: 3px solid var(--color-5);
     border-right: none;
     padding: 5px;
     height: 30px;
@@ -128,13 +137,13 @@ nav ul li a:hover{
 .searchButton {
     width: 40px;
     height: 30px;
-    background:#6a7270;
-    border-top: 3px solid #ff9102;
-    border-right: 3px solid #ff9102;
-    border-bottom: 3px solid #ff9102;
+    background:var(--color-1);
+    border-top: 3px solid var(--color-5);
+    border-right: 3px solid var(--color-5);
+    border-bottom: 3px solid var(--color-5);
     border-left: transparent;
     text-align: center;
-    color: rgb(0, 247, 255);
+    color: var(--color-5);
     border-radius: 0 15px 15px 0;
     cursor: pointer;
     font-size: 20px;
@@ -150,14 +159,17 @@ nav ul li a:hover{
 /* =====SEARCH COMPONENT END===== */
 
 /* =====END MENU======= */
-
+#secction{
+    background-color: var(--color-bg);
+}
 
 /* MAIN */
 .banner{
     display: flex;
     height: 860px;
     width: 100%;
-    background-image: url(../img/500.jpg);
+    /* background-image: url(../img/500.jpg); */
+    background-color: var(--color-bg);
     background-size: 100% 100%;
     overflow: hidden;
     background-position: center;
