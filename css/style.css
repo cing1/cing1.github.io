@@ -8,8 +8,8 @@
     --color-4: #ff00a5;
     --color-5: #ff5e00;
     --color-input: #fa1185d0;
-    --color-nav: #0a0c1c;
-    --color-bg: #1a1f47;
+    --color-nav: #1a1f47;
+    --color-bg: #404258;
 }
 
 /* scroll bar */
@@ -36,6 +36,7 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
+
 /* ===MENU==== */
 .navbar {
     position: fixed;
