@@ -9,6 +9,7 @@
     }
 }
 
+/* ====== responsive mobile ===== */
 @media only screen and (max-width: 800px) {
     .navbar {
         position: fixed;
@@ -100,12 +101,11 @@
         display: none;
     }
 
-
     .banner{
         display: flex;
         height: 90vh;
         width: 100%;
-        background-image: url(../img/500.jpg);
+        background-color: var(--color-bg);
         background-size: 100% 100%;
         overflow: hidden;
         background-position: center;
