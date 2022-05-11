@@ -112,6 +112,12 @@ nav ul li a:hover{
 	color: var(--color-4);
 	transition: .3s;
 }
+.active:hover{
+	color: var(--color-4);
+	transition: .3s;
+}
+
+
 /* =====SEARCH COMPONENT===== */
 
 .search {
@@ -173,6 +179,35 @@ nav ul li a:hover{
     background-color: var(--color-bg);
 }
 
+.btn-float{
+    display: flex;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 10px;
+    border: solid 1px transparent;
+    border-top-left-radius: 50vh;
+    border-bottom-left-radius: 50vh;
+    border-bottom-right-radius: 50vh;
+    background-color: #00ff2a;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000000;
+    transition: all 0.2s;
+}
+
+.btn-float i{
+    font-size: 40px;
+}
+
+
+.btn-float:hover{
+    width: 70px;
+    height: 70px;
+    background-color: #64ff7e;
+}
 /* MAIN */
 .banner{
     display: flex;
