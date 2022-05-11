@@ -156,7 +156,16 @@ nav ul li a:hover{
     align-items: center;
     padding-right: 10px;
 }
-
+.search-container a{
+    font-size: 20px;
+    padding: 3px;
+    color: var(--color-3);
+    transition: all 0.2s;
+}
+.search-container a:hover{
+    font-size: 28px;
+    color: var(--color-4);
+}
 /* =====SEARCH COMPONENT END===== */
 
 /* =====END MENU======= */
@@ -184,7 +193,7 @@ nav ul li a:hover{
     max-width: 60%;
     max-height: 60%;
     border-radius: 20px 20px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.678);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.678);
 }
 .home-text h1 {
     padding-top: 20px;
@@ -203,7 +212,7 @@ nav ul li a:hover{
     text-align: center;
     font-size: 30px;
     margin: 20px 0 20px 0 20px;
-    text-shadow: 1px 1px 10px black, 0 0 1em blue, 0 0 .5em blue;
+    /* text-shadow: 1px 1px 5px black; */
    
 }
 /* END MAIN */
@@ -213,7 +222,6 @@ nav ul li a:hover{
     height: 860px;
     background-image: url(../img/500.jpg);
     background: rgb(35, 48, 75);
-    border-radius: 20px;
     padding: 0.5em;
 }
 
@@ -245,11 +253,7 @@ nav ul li a:hover{
     border-radius: 10px;
     cursor: default;
     transition: all .2s ease 0s;
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 0 10px #000000;
 }
 
 .serv1:hover,
@@ -259,11 +263,7 @@ nav ul li a:hover{
     border: solid 2px rgb(0, 238, 255);
     opacity: 1;
     visibility: visible;
-    -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 10px #000000;
 }
 
 
@@ -273,11 +273,7 @@ nav ul li a:hover{
     border: solid 1px skyblue;
     border-radius: 4px;
     padding: 25px;
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 0 10px #000000;
 }
 .imges img {
     /*margin: -200px 0;*/
@@ -310,148 +306,62 @@ nav ul li a:hover{
 
 /* ======project===== */
 #project{
-    height: 750px;
+    height: auto;
     background-image: url(../img/500.jpg);
-    border-radius:  20px;
+    padding: 60px 20px;
+    justify-content: center;
 
 }
-#tec{
-    background-image: url(../img/500.jpg);
-    height: 860px;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 1);
+.project-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
 }
-#contac{
-    background-image: url(../img/500.jpg);
-    height: 860px;
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 1);
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 1);
+#project .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    height: 80%;
+    width: 80%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    justify-content: center;
 }
+
+.proj-card{
+    height: 330px;
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000000;
+    border: solid 2px transparent;
+}
+.proj-card:hover{
+    border: solid 2px var(--color-1);
+}
+.proj-card img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.proj-card img{
+    width: 100%;
+}
+
 
 
 footer{
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 150px;
     background-image: url(../img/500.jpg);
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------ Responive Design ------*/
-
-@media(max-width: 780px) {
-    .carrusel {
-        margin-top: 0.5px;
-        height: 45px;
-    }
-    .tec1,
-    .tec5,
-    .tec4 {
-        width: 30px;
-        height: 30px;
-        margin: 10px 20px 0 20px;
-    }
-    .tec2,
-    .tec3 {
-        width: 70px;
-        height: 30px;
-        margin: 10px 20px 0 20px;
-    }
-    .btn-contactanos span {
-        padding: 10px 0 10px 0;
-        font-size: 20px;
-    }
+.contact{
+    display: flex;
+    align-items: center;
 }
-
-@media(max-width: 480px) {
-    .serv1,
-    .serv2,
-    .serv3,
-    .serv4 {
-        width: 40%;
-    }
-    .imges img {
-        height: 90px;
-        margin-bottom: -77px;
-    }
-    .name {
-        font-size: 12px;
-        margin: 92px 0 6px 0;
-    }
-    .parrafo p {
-        font-size: 10px;
-    }
-    .nosotros {
-        height: 400px;
-    }
-    .text-nosotros {
-        width: 85%;
-        height: 90%;
-    }
-    .text-nosotros p {
-        font-size: 11px;
-        height: 80%;
-    }
-    .tecnologias h2 {
-        background: rgba(0, 0, 0, .6);
-        margin-top: -43px;
-        font-size: 16px;
-    }
-    .carrusel {
-        margin-top: -5px;
-        height: 65px;
-    }
-    .tec1,
-    .tec5,
-    .tec4 {
-        width: 18px;
-        height: 18px;
-        margin: 6px 14px 0 14px;
-    }
-    .tec2,
-    .tec3 {
-        width: 50px;
-        height: 20px;
-        margin: 6px 14px 0 14px;
-    }
-    .sociales img {
-        width: 20px;
-        height: 20px;
-    }
-    .sociales h3 {
-        margin-top: 2px;
-        margin-right: -10px;
-        font-size: 16px;
-    }
-    .modalHeader h2 {
-        font-size: 22px;
-    }
-    .contenidoModal {
-        width: 80%;
-    }
-    .formaContacto {
-        left: -60px;
-        font-size: 12px;
-    }
-}
-
-
-
