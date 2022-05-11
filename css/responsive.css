@@ -135,9 +135,9 @@
         width: 70%;
         margin: 20% 20%;
         text-align: center;
-        font-size: 30px;
+        font-size: 20px;
         margin: 20px 0 20px 0 20px;
-        text-shadow: 1px 1px 10px black, 0 0 10px blue, 0 0 10px blue;
+        /* text-shadow: 1px 1px 10px black, 0 0 10px blue, 0 0 10px blue; */
        
     }
 }
