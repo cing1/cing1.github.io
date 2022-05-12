@@ -367,7 +367,7 @@ nav ul li a:hover{
     width: 80%;
     padding: 10px 10px;
     border-radius: 20px;
-    justify-content: center;
+    justify-items: center;
 }
 
 .proj-card{
@@ -377,16 +377,19 @@ nav ul li a:hover{
     box-shadow: 0 0 10px #000000;
     border: solid 2px transparent;
 }
+.projects h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color: var(--color-2)
+}
 .proj-card:hover{
     border: solid 2px var(--color-1);
 }
 .proj-card img{
+    width: 100%;
+    height: 70%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-}
-
-.proj-card img{
-    width: 100%;
 }
 
 
