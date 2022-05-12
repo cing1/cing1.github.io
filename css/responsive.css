@@ -4,7 +4,7 @@
     }
 }
 @media only screen and (max-width: 990px){
-    .search-container{
+    .search{
         display: none;
     }
 }
@@ -95,10 +95,6 @@
         text-transform: capitalize;
         position: relative;
         
-    }
-
-    .search {
-        display: none;
     }
 
     .banner{

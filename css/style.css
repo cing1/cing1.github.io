@@ -257,14 +257,26 @@ nav ul li a:hover{
 }
 /* END MAIN */
 
-/* ===sec 1==== */
-#sec1 {
+/* ===services ==== */
+#services {
     height: auto;
-    background-image: url(../img/500.jpg);
-    background: rgb(35, 48, 75);
+    /* background-image: url(../img/500.jpg); */
+    background: var(--color-bg);
     padding: 0.5em;
 }
-
+.services-container{
+    height: auto;
+    border: 1px solid #ccc;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-gap: 20px;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    border: 1px solid #ccc;
+}
 .titulo{
     padding-left: 30px;
     color: #00ffc8;
@@ -347,16 +359,14 @@ nav ul li a:hover{
 /* ======project===== */
 #project{
     height: auto;
-    background-image: url(../img/500.jpg);
+    background-color: var(--color-bg);
     padding: 60px 20px;
     justify-content: center;
 
 }
 .project-container{
-    display: flex;
     width: 100%;
     height: auto;
-    justify-content: center;
 }
 #project .projects{
     display: grid;
@@ -376,6 +386,7 @@ nav ul li a:hover{
     border-radius: 20px;
     box-shadow: 0 0 10px #000000;
     border: solid 2px transparent;
+    margin: auto;
 }
 .projects h1{
     font-family: 'Varela Round', sans-serif;
