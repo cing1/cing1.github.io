@@ -1,3 +1,4 @@
+
 const navMenu = document.querySelector('.nav');
 const padToggle = document.querySelector('.pad');
 
@@ -5,8 +6,6 @@ const padToggle = document.querySelector('.pad');
 padToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
 });
-
-
 let modal = document.getElementById('modalContact');
 let flex = document.getElementById('flex');
 let abrir = document.getElementById('abrir');
@@ -26,20 +25,8 @@ window.addEventListener('click', function(e){
         modal.style.display = 'none';
     }
 });
-// contact whatsapp
-/** 
- * Listen for click event across the document & trigger on
- * buttons that have a data-url attribute.
- */
- document.addEventListener('click', function (event) {
-	if (event.target.matches('[data-prototype-url]')) {
-    var button = event.target;
-		var buttonURL = button.getAttribute('data-prototype-url');
-    window.location.href = buttonURL;
-    console.log(button.textContent + ' clicked');
-	}
-}, false);
 
+alert("hla mundo");
 // Navigation active state on scroll
 const nav_sections = $('section');
 const main_nav = $('.nav');
@@ -62,3 +49,27 @@ $(window).on('scroll', function() {
         }
     });
 });
+
+$(document).ready(function(){
+    var ir_a = $(".desplazar");
+    ir_a.click(function(evento){
+    evento.preventDefault();
+    $("body, html").animate(
+        {scrollTop: $(this.hash).offset().top}
+    );
+    });
+});
+
+// Smooth scrolling using jQuery easing
+// $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+//     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//     var target = $(this.hash);
+//     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//     if (target.length) {
+//         $('html, body').animate({
+//         scrollTop: (target.offset().top - 56)
+//         }, 1000, "easeInOutExpo");
+//         return false;
+//     }
+//     }
+// });
