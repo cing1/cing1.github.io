@@ -1,0 +1,19 @@
+#banner-template{
+    display: flex;
+    height: 1200px;
+    width: 100%;
+    background-color: var(--color-bg);
+    background-size: 100% 100%;
+    overflow: hidden;
+    background-position: center;
+}
+.iframe-container{
+    border-radius: 15px;
+    border: solid 2px rgb(0, 110, 255);
+    margin: 0px auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.iframe-container iframe{
+    border-radius: 15px;
+}
