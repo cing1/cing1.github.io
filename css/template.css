@@ -8,6 +8,7 @@
     background-position: center;
 }
 .iframe-container{
+    width: 95%;
     border-radius: 15px;
     border: solid 2px rgb(0, 110, 255);
     margin: 0px auto;
