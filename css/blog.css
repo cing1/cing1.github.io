@@ -1,0 +1,85 @@
+/* esto es un prueba par agit */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+:root{
+    --color-1: #0ff;
+    --color-2: #6993fd;
+    --color-3: #2f00ff;
+    --color-4: #ff00a5;
+    --color-5: #ff5e00;
+    --color-input: #fa1185d0;
+    --color-nav: #1a1f47;
+    --color-bg: #404258;
+}
+
+/* blogs */
+
+#blog{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--color-bg);
+    padding-top: 60px;
+}
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+.blog-card{
+    display: flex;
+    width: 80%;
+    height: 200px;
+    max-width: var(--breakpoint-extra-large);
+    padding: 2px 2px;
+    border-radius: 12px;
+    /* border: 2px solid #aaf; */
+    box-shadow: 0 0 12px #000;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 800px;
+    
+flex-direction: column;align-items: center;}
+
+.blog-card img{
+    width: 280px;
+    border-radius: 12px;
+
+}
+.blogs .prev{
+    padding: 20px;
+}
+.blogs a{
+    color: var(--color-2);;
+    text-decoration: none;
+    font-size: 18px;
+}
+.blogs h3{
+    padding-top: 10px;
+    color: #000;
+    font-size: 14px;
+}
+@media only screen and (max-width: 540px) {
+    .blog-card{
+        width: 90%;
+        height: 120px;
+    }
+    .blog-card img{
+        width: 100px;
+        
+    }
+    .blogs .prev{
+        padding: 2px;
+    }
+    .blogs a, .blogs h3{
+        font-size: 1rem;
+    }
+}

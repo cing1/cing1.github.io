@@ -8,56 +8,22 @@
       <title>CING</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/blog.css">
       <link rel="stylesheet" href="../css/responsive.css">
       <link rel="stylesheet" href="../css/template.css">
       <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
       <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-      <script defer src="js/main.js/"></script>
+      <script defer src="../js/main.js/"></script>
       <script src="assets/jquery/jquery.min.js"></script>
+      <script src="../src/footer-copyrigth.js"></script>
+      <script src="../src/navbar.js"></script>
     </head>
     <body>
       <button type="button" class="btn-float" onclick="window.open('https://wa.me/59174446236','_blank');">
         <i class="bx bxl-whatsapp"></i>
       </button>
         <header>
-          <nav class="navbar hide">
-            <div class="navbarm">
-              <div class="logo">
-                <img src="img/logo.png" alt="">
-                <h1> CING</h1>
-              </div>
-              <div class="pad">
-                <span class="br-1"></span>
-                <span class="br-2"></span>
-                <span class="br-3"></span>
-              </div>
-            </div>
-            <div class="nav nav-menu-visible">
-              <ul class="navbarli">
-                <li><a href="https://cing1.github.io/index.html">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#project">Proyectos</a></li>
-                <li><a href="blog/blog.html">Mi blog</a></li>
-                <li><a class="active" href="https://cing1.github.io/libros.html" target="_blank">Libros</a></li>
-                <li><a href="portfolio/portfolio.html" target="_blank">Portafolio</a></li>
-                <li><a href="#contac">Contacto</a></li>
-                <li><a href="#contac">Acerca de</a></li>
-              </ul>
-              
-              <div class="search-container">
-                <a href="https://www.facebook.com/cing.ingenieria" target="_blank"> <i class="bx bxl-facebook"></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com" target="_blank"><i class="bx bxl-linkedin"></i></a>
-                <div class="search">
-                   <input type="text" class="searchTerm" placeholder="Buscar">
-                   <button type="submit" class="searchButton">
-                     <i class="bx bx-search"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </nav>
+          <nav-bar></nav-bar>
         </header>
         <section id="blog">
           <div class="titulo">Últimas publicaciones</div>
@@ -65,21 +31,44 @@
               <div class="blogs">
                   <div class="blog-card">
                       <img src="https://img.youtube.com/vi/kyPu_rl64so/hqdefault.jpg" alt="Sample photo">
-                      <divc class="prev">
+                      <div class="prev">
                           <a href="#">Programa de métodos numéricos para calculadora HP-PRIME</a>
-                          <h1>Fecha de publicación: <span>01-01-2022</span></h1>
+                          <h3>Fecha de publicación: <span>01-01-2022</span></h3>
                       </div>
                   </div>
+                  <div class="blog-card">
+                    <img src="https://img.youtube.com/vi/kyPu_rl64so/hqdefault.jpg" alt="Sample photo">
+                    <div class="prev">
+                        <a href="#">Programa de métodos numéricos para calculadora HP-PRIME</a>
+                        <h3>Fecha de publicación: <span>01-01-2022</span></h3>
+                    </div>
+                </div>
+                <div class="blog-card">
+                  <img src="https://img.youtube.com/vi/kyPu_rl64so/hqdefault.jpg" alt="Sample photo">
+                  <div class="prev">
+                      <a href="#">Programa de métodos numéricos para calculadora HP-PRIME</a>
+                      <h3>Fecha de publicación: <span>01-01-2022</span></h3>
+                  </div>
+              </div>
+              <div class="blog-card">
+                <img src="https://img.youtube.com/vi/kyPu_rl64so/hqdefault.jpg" alt="Sample photo">
+                <div class="prev">
+                    <a href="#">Programa de métodos numéricos para calculadora HP-PRIME</a>
+                    <h3>Fecha de publicación: <span>01-01-2022</span></h3>
+                </div>
+            </div>
               </div>
           </div>
-      </section>
+        </section>
         
         <footer>
-            <h2> © Copyright: <span>CING</span> all rights reserved</h2>
-            <h3>Powered by: Mario Cesgo Solis</h3>
+          <footer-copyrigth></footer-copyrigth>
         </footer>
-        <script src="js/main.js"></script>
 
+
+        <script src="../js/main.js"></script>
+        <script src="../src/footer-copyrigth.js"></script>
+        <script src="../src/navbar.js"></script>
     </body>
     
 </html>
