@@ -13,15 +13,18 @@
       <link rel="stylesheet" href="../css/template.css">
       <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
       <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+      <!-- reveal scrolling -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
       <script defer src="../js/main.js/"></script>
       <script src="assets/jquery/jquery.min.js"></script>
       <script src="../src/footer-copyrigth.js"></script>
       <script src="../src/navbar.js"></script>
     </head>
     <body>
-      <button type="button" class="btn-float" onclick="window.open('https://wa.me/59174446236','_blank');">
+      <!-- <button type="button" class="btn-float" onclick="window.open('https://wa.me/59174446236','_blank');">
         <i class="bx bxl-whatsapp"></i>
-      </button>
+      </button> -->
         <header>
           <nav-bar></nav-bar>
         </header>
@@ -66,7 +69,19 @@
         <footer>
           <footer-copyrigth></footer-copyrigth>
         </footer>
+        <script>
+        ScrollReveal({ 
+          reset: true,
+          distance:'60px',
+          duration: 1500,
+          delay: 100
+        });
 
+        ScrollReveal().reveal('.titulo', { delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.blog-card', { delay: 200, origin: 'right',interval: 200});
+        </script>
+
+      </script>
 
         <script src="../js/main.js"></script>
         <script src="../src/footer-copyrigth.js"></script>
