@@ -70,7 +70,7 @@ flex-direction: column;align-items: center;}
 }
 @media only screen and (max-width: 540px) {
     .blog-card{
-        width: 90%;
+        width: 100%;
         height: 120px;
     }
     .blog-card img{
