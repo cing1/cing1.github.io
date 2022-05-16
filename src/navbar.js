@@ -19,7 +19,7 @@ class menu extends HTMLElement{
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#project">Proyectos</a></li>
                 <!-- <li><a href="#tec">Tecnología</a></li> -->
-                <li><a href="blog/blog.html">Mi blog</a></li>
+                <li><a href="blog/blog.html" target="_blank">Mi blog</a></li>
                 <li><a href="libros.html" target="_blank">Libros</a></li>
                 <li><a href="portfolio/portfolio.html" target="_blank">Portafolio</a></li>
                 <li><a href="#contact">Contacto</a></li>
