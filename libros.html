@@ -17,6 +17,7 @@
     <script src="assets/jquery/jquery.min.js"></script>
   </head>
     <body>
+      <div id="preloader"></div>
       <!-- <button type="button" class="btn-float" onclick="window.open('https://wa.me/59174446236','_blank');">
         <i class="bx bxl-whatsapp"></i>
       </button> -->
@@ -32,6 +33,15 @@
       <footer>
         <footer-copyrigth></footer-copyrigth>
       </footer>
+        <!-- preload -->
+        <script>
+          var loader = document.getElementById("preloader");
+          window.addEventListener("load", function(){
+            loader.style.display = "none";
+          })
+        </script>
+
+      
       <script src="js/main.js"></script>
       <script src="src/navbar.js"></script>
       <script src="src/footer-copyrigth.js"></script>
