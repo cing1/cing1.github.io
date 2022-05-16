@@ -1,9 +1,9 @@
 @media only screen and (max-width: 1140px) {
     nav ul li a{
-        font-size: 18px;
+        font-size: 14px;
     }
 }
-@media only screen and (max-width: 990px){
+@media only screen and (max-width: 1020px){
     .search{
         display: none;
     }
@@ -27,15 +27,15 @@
     .navbarm{
         display: flex;
         width: 100%;
-        align-content: space-between;
-    z-index: 99;}
+        /* align-content: space-around; */
+    /* z-index: 2; */align-items: center;}
     .logo{
         display: flex;
         align-items: center;
         width: 5%;
         padding-left: 10px;
         color: var(--color-5);
-    }
+    z-index: 99;}
     .pad{
         display: block;
         cursor: pointer;
@@ -94,9 +94,9 @@
         
     }
     .search-container{
-        display: none;
+        /* display: none; */
 
-    }
+    position: fixed;margin-left: 120px;z-index: 100;/* width: 100%; *//* background-color: aqua; *//* justify-content: center; *//* cursor: pointer; */}
 
 
 
@@ -159,6 +159,6 @@
     footer h3{
         font-family: 'Courier New', Courier, monospace;
         color: var(--color-3);
-        font-size: 12px;
+        font-size: 10px;
     }
 }

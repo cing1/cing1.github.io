@@ -32,6 +32,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
 *{
 	padding: 0;
 	margin: 0;
@@ -256,7 +260,7 @@ nav ul li a:hover{
     text-align: center;
     padding: 0 20px;
     font-size: 30px;
-    text-shadow: 1px 1px 10px black, 0 0 1em rgb(0, 0, 0), 0 0 .5em rgb(0, 0, 0);
+    /* text-shadow: 1px 1px 10px black, 0 0 1em rgb(0, 0, 0), 0 0 .5em rgb(0, 0, 0); */
    
 }
 /* END MAIN */
@@ -276,8 +280,8 @@ nav ul li a:hover{
 #services {
     height: auto;
     max-width: 100%;
-    padding: 60px 20px;
-    background: var(--color-bg);
+    padding: 0px 20px;
+    padding-bottom: 20px;background: var(--color-bg);
 }
 .services-container{
     height: auto;
@@ -364,7 +368,7 @@ nav ul li a:hover{
 
 #contact{
     background-color: rgb(15, 15, 51);
-}
+padding: 0 20px;}
 .contact-container{
     display: flex;
     width: 60%;
