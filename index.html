@@ -30,6 +30,7 @@
 
     </head>
     <body>
+      <div id="preloader"></div>
       <button type="button" class="btn-float" onclick="window.open('https://wa.me/59174446236','_blank');">
         <i class="bx bxl-whatsapp"></i>
       </button>
@@ -165,6 +166,15 @@
         <footer id="footer-info">
           <footer-copyrigth></footer-copyrigth>
         </footer>
+
+        <!-- preload -->
+        <script>
+          var loader = document.getElementById("preloader");
+          window.addEventListener("load", function(){
+            loader.style.display = "none";
+          })
+
+        </script>
         <!-- scroll reveal -->
         <script>
           ScrollReveal({ 
