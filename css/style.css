@@ -298,15 +298,10 @@ nav ul li a:hover{
     padding: 0px 20px;
     padding-bottom: 20px;background: var(--color-bg);
 }
-.services-container{
-    height: auto;
-    /* border: 1px solid #ccc; */
-}
 #services .services{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%,200px), 1fr));
     grid-gap: 28px;
-    /* width: 90%; */
     max-width: var(--breakpoint-extra-large);
     height: auto;
     margin: auto;
@@ -349,24 +344,16 @@ flex-direction: column;align-items: center;/* margin-bottom: 0px; */}
 #projects{
     height: auto;
     background-color: var(--color-bg);
-    padding: 60px 20px;
+    padding: 10px 0px;
     justify-content: center;
-
 }
-.project-container{
-    width: 100%;
-    height: auto;
-}
-#project .projects{
+#projects .projects{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-    align-items: stretch;
-    height: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,200px), 1fr));
+    grid-gap: 28px;
+    max-width: var(--breakpoint-extra-large);
+    height: auto;
     margin: auto;
-    padding: 10px 10px;
-    border-radius: 20px;
-    justify-items: center;
 }
 
 .proj-card{
@@ -428,7 +415,6 @@ padding: 0 20px;}
 
 
 footer-copyrigth{
-	/* position: relative; */
 	width: 100%;
 	height: 80px;
     background-color: var(--color-footer);
