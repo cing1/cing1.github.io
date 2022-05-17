@@ -109,11 +109,11 @@ nav ul li a{
 	color: var(--color-1);
 	text-decoration: none;
 	font-weight: bold;
-	text-transform: capitalize;
     position: relative;
     
 }
 
+/* hover border botton */
 a::after {
 	position: absolute;
 	content: "";
@@ -134,7 +134,7 @@ nav ul li a:hover{
 	transition: .3s;
 }
 
-.active:hover{
+.active a{
 	color: var(--color-4);
 	transition: .3s;
 }
@@ -302,7 +302,7 @@ nav ul li a:hover{
     height: auto;
     /* border: 1px solid #ccc; */
 }
-.services{
+#services .services{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%,200px), 1fr));
     grid-gap: 28px;
@@ -346,7 +346,7 @@ flex-direction: column;align-items: center;/* margin-bottom: 0px; */}
 }
 
 /* ======project===== */
-#project{
+#projects{
     height: auto;
     background-color: var(--color-bg);
     padding: 60px 20px;

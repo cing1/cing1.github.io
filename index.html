@@ -1,199 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="img\logo1.png" rel="icon" type="image/png">
-      <title>CING</title>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/responsive.css">
-      <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
-      <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-      <script defer src="js/main.js/"></script>
-      <script src="src/navbar.js"></script>
-      <script src="src/footer-copyrigth.js"></script>
-      <script src="assets/jquery/jquery.min.js"></script>
-      <!-- reveal scrolling -->
-      <script src="https://unpkg.com/scrollreveal"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="img\logo1.png" rel="icon" type="image/png">
+  <title>CING</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <script defer src="js/main.js/"></script>
+  <script src="src/navbar.js"></script>
+  <script src="src/footer-copyrigth.js"></script>
+  <script src="assets/jquery/jquery.min.js"></script>
+  <!-- reveal scrolling -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YK109W16L"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YK109W16L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'G-1YK109W16L');
-      </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    </head>
-    <body>
-      <div id="preloader"></div>
-      <button type="button" class="btn-float" onclick="window.open('https://wa.me/59174446236','_blank');">
-        <i class="bx bxl-whatsapp"></i>
-      </button>
-        <header>
-          <nav-bar></nav-bar>
-        </header>
-        <section>
-            <div class="banner">
-              <div class="home-text">
-                <h1>Empresa constructora <span>CING</span></h1>
-                <br>
-                <h2>Obras civiles, cálculos estructurales, supervision y construcción. Arquitectura, avaluos inmobiliarios, diseño de interiores, mobiliario, paisajismo.</h2>
-              </div>
-            </div>
-        </section>
-        <section id="services">
-            <div class="titulo">
-                <h1>Servicios</h1>
-            </div>
-            <!-- <div class="services-container"> -->
-              <div class="services">
-                <div class="card">
-                  <img src="img/servicios/01.jpg" alt="Sample photo">
-                  <div class="card-title">
-                    <h1>Diseño y cálculo estructural</h1>
-                    <a href="#" class="btn">Más información</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/servicios/02.jpg" alt="Sample photo">
-                  <div class="card-title">
-                    <h1>Modelado BIM</h1>
-                    <a href="#" class="btn btn-primary btn-block">Más información</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/servicios/03.jpg" alt="Sample photo">
-                  <div class="card-title">
-                    <h1>Supervición de obras civiles</h1>
-                    <a href="#" class="btn btn-primary btn-block">Más información</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/servicios/04.jpg" alt="Sample photo">
-                  <div class="card-title">
-                    <h1>Diseño geométrico de carreteras</h1>
-                    <a href="#" class="btn btn-primary btn-block">Más información</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/servicios/05.jpg" alt="Sample photo">
-                  <div class="card-title">
-                    <h1>Consultoría</h1>
-                    <a href="#" class="btn btn-primary btn-block">Más información</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/servicios/06.jpg" alt="Sample photo">
-                  <div class="card-title">
-                    <h1>Elaboración de proyectos</h1>
-                    <a href="#" class="btn btn-primary btn-block">Más información</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/servicios/07.jpg" alt="Sample photo">
-                  <div class="card-title">
-                    <h1>Diseño arquitectónico</h1>
-                    <a href="#" class="btn btn-primary btn-block">Más información</a>  
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="img/servicios/08.jpg" alt="Sample photo">
-                  <div class="card-title">
-                    <h1>Desarrollo de sofware</h1>
-                    <a href="#" class="btn btn-primary btn-block">Más información</a>  
-                  </div>
-                </div>
-              </div>
-            <!-- </div> -->
-        </section>
-      
-        <!-- <section id="project">
-          <div class="titulo">
-            <h1>Proyectos</h1>
-          </div>
-            <div class="project-container">
-              <div class="projects">
-                <div class="proj-card">
-                  <img src="img/banner1.jpg" alt="Sample photo">
-                  <h1>Proyecto vivienda</h1>
-                  <a href="#" class="btn">Here's why</a>
-                </div>
-                <div class="proj-card">
-                  <img src="img/banner1.jpg" alt="Sample photo">
-                  <h1>Construcción de residencial</h1>
-                  <a href="#" class="btn btn-primary btn-block">Here's why</a>
-                </div>
-                <div class="proj-card">
-                  <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
-                  <h1>Supervición de obras civiles</h1>
-                  <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Here's why</a>
-                </div>
-                <div class="proj-card">
-                  <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
-                  <h3>Construcción</h3>
-                  <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Here's why</a>
-                </div>
-              </div>
-            </div>
-        </section> -->
-        <section id="contact">
-          <div class="titulo">
-            <h1>Contactos</h1>
-          </div>
-          <div class="contact-container">
-            <div class="contact-card">
-              <a href="https://wa.me/59174446236" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-              <h2>Whatsapp</h2>
-              <h3>+591 74446236</h3>
-            </div>
-            <div class="contact-card">
-              <a href="mailto:mariocs855@gmail.com?body=Hola," target="_blank"><i class="bx bxl-gmail"></i></a>
-              <h2>Gmail</h2>
-              <h3>mariocs855@gmail.com</h3>
-            </div>
-            <div class="contact-card">
-              <a href="https://www.linkedin.com/in/mario-cesgo-soliz-862600167/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-              <h2>Telegram</h2>
-              <h3>Mario Cesgo Soliz</h3>
-            </div>
-          </div>
-        </section>
-        <footer id="footer-info">
-          <footer-copyrigth></footer-copyrigth>
-        </footer>
+    gtag('config', 'G-1YK109W16L');
+  </script>
 
-        <!-- preload -->
-        <script>
-          var loader = document.getElementById("preloader");
-          window.addEventListener("load", function(){
-            loader.style.display = "none";
-          })
-        </script>
-        <!-- scroll reveal -->
-        <script>
-          ScrollReveal({ 
-            reset: true,
-            distance:'60px',
-            duration: 1500,
-            delay: 100
-          });
+</head>
 
-          ScrollReveal().reveal('.titulo', { delay: 200, origin: 'left' });
-          ScrollReveal().reveal('.card', { delay: 200 });
-          ScrollReveal().reveal('.contact-card', { delay: 200,origin: 'left', interval: 200});
-          ScrollReveal().reveal('.home-text', { delay: 200, origin: 'zoom'});
-        </script>
+<body>
+  <div id="preloader"></div>
+  <button type="button" class="btn-float" onclick="window.open('https://wa.me/59174446236','_blank');">
+    <i class="bx bxl-whatsapp"></i>
+  </button>
+  <header>
+    <nav-bar></nav-bar>
+  </header>
+  <section id="home">
+    <div class="banner">
+      <div class="home-text">
+        <h1>Empresa constructora <span>CING</span></h1>
+        <br>
+        <h2>Obras civiles, cálculos estructurales, supervision y construcción. Arquitectura, avaluos inmobiliarios,
+          diseño de interiores, mobiliario, paisajismo.</h2>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="titulo">
+      <h1>Servicios</h1>
+    </div>
+    <div class="services">
+      <div class="card">
+        <img src="img/servicios/01.jpg" alt="Sample photo">
+        <div class="card-title">
+          <h1>Diseño y cálculo estructural</h1>
+          <a href="#" class="btn">Más información</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/servicios/02.jpg" alt="Sample photo">
+        <div class="card-title">
+          <h1>Modelado BIM</h1>
+          <a href="#" class="btn btn-primary btn-block">Más información</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/servicios/03.jpg" alt="Sample photo">
+        <div class="card-title">
+          <h1>Supervición de obras civiles</h1>
+          <a href="#" class="btn btn-primary btn-block">Más información</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/servicios/04.jpg" alt="Sample photo">
+        <div class="card-title">
+          <h1>Diseño geométrico de carreteras</h1>
+          <a href="#" class="btn btn-primary btn-block">Más información</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/servicios/05.jpg" alt="Sample photo">
+        <div class="card-title">
+          <h1>Consultoría</h1>
+          <a href="#" class="btn btn-primary btn-block">Más información</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/servicios/06.jpg" alt="Sample photo">
+        <div class="card-title">
+          <h1>Elaboración de proyectos</h1>
+          <a href="#" class="btn btn-primary btn-block">Más información</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/servicios/07.jpg" alt="Sample photo">
+        <div class="card-title">
+          <h1>Diseño arquitectónico</h1>
+          <a href="#" class="btn btn-primary btn-block">Más información</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/servicios/08.jpg" alt="Sample photo">
+        <div class="card-title">
+          <h1>Desarrollo de sofware</h1>
+          <a href="#" class="btn btn-primary btn-block">Más información</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="titulo">
+      <h1>Proyectos</h1>
+    </div>
+    <div class="project-container">
+      <div class="projects">
+        <div class="proj-card">
+          <img src="img/banner1.jpg" alt="Sample photo">
+          <h1>Proyecto vivienda</h1>
+          <a href="#" class="btn">Here's why</a>
+        </div>
+        <div class="proj-card">
+          <img src="img/banner1.jpg" alt="Sample photo">
+          <h1>Construcción de residencial</h1>
+          <a href="#" class="btn btn-primary btn-block">Here's why</a>
+        </div>
+        <div class="proj-card">
+          <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+          <h1>Supervición de obras civiles</h1>
+          <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Here's why</a>
+        </div>
+        <div class="proj-card">
+          <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo">
+          <h3>Construcción</h3>
+          <a href="https://codepen.io/collection/XdWJOQ/" class="btn btn-primary btn-block">Here's why</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="titulo">
+      <h1>Contactos</h1>
+    </div>
+    <div class="contact-container">
+      <div class="contact-card">
+        <a href="https://wa.me/59174446236" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        <h2>Whatsapp</h2>
+        <h3>+591 74446236</h3>
+      </div>
+      <div class="contact-card">
+        <a href="mailto:mariocs855@gmail.com?body=Hola," target="_blank"><i class="bx bxl-gmail"></i></a>
+        <h2>Gmail</h2>
+        <h3>mariocs855@gmail.com</h3>
+      </div>
+      <div class="contact-card">
+        <a href="https://www.linkedin.com/in/mario-cesgo-soliz-862600167/" target="_blank"><i
+            class="bx bxl-linkedin"></i></a>
+        <h2>Telegram</h2>
+        <h3>Mario Cesgo Soliz</h3>
+      </div>
+    </div>
+  </section>
+  <footer id="footer-info">
+    <footer-copyrigth></footer-copyrigth>
+  </footer>
+  <!-- nav bar scroll state -->
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll("nav .nav ul li");
+    console.log(sections);
+    console.log(navLi);
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        console.log("secction top:  " + sectionTop);
+        if (pageYOffset >= sectionTop - sectionHeight / 8) {
+          current = section.getAttribute("id");
+        }
+      });
 
-        <script src="js/main.js"></script>
-        <script src="src/navbar.js"></script>
-        <script src="src/footer-copyrigth.js"></script>
+      navLi.forEach((li) => {
+        li.classList.remove("active");
+        if (li.classList.contains(current)) {
+          li.classList.add("active");
+        }
+      });
+    });
+  </script>
+  <!-- preload -->
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+  </script>
+  <!-- scroll reveal -->
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 1500,
+      delay: 100
+    });
+
+    ScrollReveal().reveal('.titulo', {
+      delay: 200,
+      origin: 'left'
+    });
+    ScrollReveal().reveal('.card', {
+      delay: 200
+    });
+    ScrollReveal().reveal('.contact-card', {
+      delay: 200,
+      origin: 'left',
+      interval: 200
+    });
+    ScrollReveal().reveal('.home-text', {
+      delay: 200,
+      origin: 'zoom'
+    });
+  </script>
+
+  <script src="js/main.js"></script>
+  <script src="src/navbar.js"></script>
+  <script src="src/footer-copyrigth.js"></script>
 
 
-    </body>
-    
+</body>
+
 </html>

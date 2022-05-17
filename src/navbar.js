@@ -1,7 +1,7 @@
-class menu extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML = `
-          <nav class="navbar hide">
+class menu extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+          <nav class="navbar">
             <div class="navbarm">
               <div class="logo">
                 <img src="img/logo.png" alt="">
@@ -15,15 +15,14 @@ class menu extends HTMLElement{
             </div>
             <div class="nav nav-menu-visible">
               <ul class="navbarli">
-                <li class="active"><a href="https://cing1.github.io/">Inicio</a></li>
-                <li><a href="https://cing1.github.io/#services">Servicios</a></li>
-                <li><a href="#project">Proyectos</a></li>
-                <!-- <li><a href="#tec">Tecnología</a></li> -->
-                <li><a href="https://cing1.github.io/blog/blog.html" target="_blank">Mi blog</a></li>
-                <li><a href="https://cing1.github.io/libros.html" target="_blank">Libros</a></li>
-                <li><a href="portfolio/portfolio.html" target="_blank">Portafolio</a></li>
-                <li><a href="https://cing1.github.io/#contact">Contacto</a></li>
-                <li><a href="https://cing1.github.io/#footer-info">Acerca de</a></li>
+                <li class="home active"><a href="https://cing1.github.io/">Inicio</a></li>
+                <li class="services"><a href="#services">Servicios</a></li>
+                <li class="projects"><a href="#project">Proyectos</a></li>
+                <li class="blogs"><a href="https://cing1.github.io/blog/blog.html">Mi blog</a></li>
+                <li class="books"><a href="https://cing1.github.io/libros.html">Libros</a></li>
+                <li class="services"><a href="portfolio/portfolio.html" target="_blank">Portafolio</a></li>
+                <li class="contact"><a href="#contact">Contacto</a></li>
+                <li class="footer-info"><a href="#footer-info">Acerca de</a></li>
               </ul>
               
               <div class="search-container">
@@ -41,7 +40,7 @@ class menu extends HTMLElement{
             </div>
           </nav>
         `;
-    }
+  }
 }
 
 window.customElements.define("nav-bar", menu);
