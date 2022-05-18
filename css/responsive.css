@@ -113,42 +113,30 @@
         margin-left: 120px;
         z-index: 100;
     }
-    .banner {
-        display: flex;
-        height: 90vh;
-        width: 100%;
-        background-color: var(--color-bg);
-        background-size: 100% 100%;
-        overflow: hidden;
-        background-position: center;
-    }
+
+    #home{
+        height: 100vh;
+
+    /* background-size: cover;/* background-size: 100% 100%; */background-size: cover;}
 
     .home-text {
-        color: #fff;
-        background: rgba(0, 0, 0, .6);
-        margin: 50px auto;
-        margin-top: 100px;
-        max-width: 95%;
+        background: rgb(6 4 18 / 57%);
+        margin: 20vh auto;
+        max-width: 60%;
         max-height: 60%;
         border-radius: 20px 20px;
+        box-shadow: 0 0 15px rgb(0 0 0 / 68%);
     }
 
     .home-text h1 {
-        padding-top: 20px;
-        color: #00ffc8;
-        text-align: center;
         font-size: 30px;
-        margin: 20px 0px 10px 0;
-        text-shadow: 1px 1px 10px black, 0 0 1em rgb(0, 0, 0), 0 0 .5em rgb(0, 0, 0);
     }
 
     .home-text h2 {
         align-content: center;
-        color: #eeff00;
-        background: transparent;
+        padding: 5px 2px;
         text-align: center;
         font-size: 20px;
-        margin: 20px 0 20px 0 20px;
     }
 
     .contact-container {
