@@ -9,8 +9,8 @@
     --color-5: #ff5e00;
     --color-input: #fa1185d0;
     --color-nav: #11002e;
-    --color-bg: #1e1e36;
-    --color-footer: #04040c;
+    --color-nav-movile: #24045c;--color-bg: #1e1e36;
+    --color-shadow: #5e61d5;--color-footer: #04040c;
     --breakpoint-extra-large: 1100px;
 }
 
@@ -343,8 +343,8 @@ nav ul li a:hover {
     height: 330px;
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 0 10px #000000;
-    border: solid 2px #11002e;
+    box-shadow: 0 0 10px var(--color-shadow);
+    border: solid 2px #1d36e9;
     margin: auto;
 }
 
