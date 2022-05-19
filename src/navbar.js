@@ -16,12 +16,12 @@ class menu extends HTMLElement {
             <div class="nav nav-menu-visible">
               <ul id="nav" class="navbarli">
                 <li><a class="menu active" href="https://cing1.github.io/">Inicio</a></li>
-                <li><a class="menu" href="#services">Servicios</a></li>
-                <li><a class="menu" href="#projects">Proyectos</a></li>
+                <li><a class="menu" href="https://cing1.github.io/#services">Servicios</a></li>
+                <li><a class="menu" href="https://cing1.github.io/#projects">Proyectos</a></li>
                 <li><a class="menu" href="https://cing1.github.io/blog.html">Mi blog</a></li>
                 <li><a class="menu" href="https://cing1.github.io/libros.html">Libros</a></li>
                 <li><a class="menu" href="https://cing1.github.io/portfolio/portfolio.html" target="_blank">Portafolio</a></li>
-                <li><a class="menu" href="#contact">Contacto</a></li>
+                <li><a class="menu" href="https://cing1.github.io/#contact">Contacto</a></li>
                 <li><a class="menu" href="https://cing1.github.io/#footer-info">Acerca de</a></li>
               </ul>
               
