@@ -9,6 +9,19 @@ const padToggle = document.querySelector('.pad');
 padToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
 });
+
+// menu state
+var btnContainer = document.getElementById("nav");
+var menus = btnContainer.getElementsByClassName("menu");
+console.log(menus);
+for (var i = 0; i < menus.length; i++) {
+  menus[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+};
+
 // scroll reveal
 ScrollReveal({
     reset: true,
