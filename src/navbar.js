@@ -4,7 +4,7 @@ class menu extends HTMLElement {
           <nav class="navbar">
             <div class="navbarm">
               <div class="logo">
-                <!--<img src="img/logo.png" alt=""> -->
+                <!--<img src="img/logo.png" alt="logo">-->
                 <h1> CING</h1>
               </div>
               <div class="pad">
