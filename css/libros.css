@@ -7,7 +7,7 @@
     position: relative;
     height: 90%;
     width: 90%;
-    max-width: calc(var(--break-point-extra-large) + 65px);
+    max-width: calc(1100px);
     border-radius: 15px;
     border: solid 2px rgb(0, 110, 255);
     margin: 0px auto;
@@ -15,4 +15,11 @@
 }
 .iframe-container iframe{
     border-radius: 15px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .iframe-container{
+        width: 95%;
+    }
 }
