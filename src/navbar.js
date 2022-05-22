@@ -7,10 +7,10 @@ class menu extends HTMLElement {
                 <!--<img src="img/logo.png" alt="logo">-->
                 <h1> CING</h1>
               </div>
-              <div class="pad">
-                <span class="br-1"></span>
+              <div class="pad bx bx-menu">
+                <!--<span class="br-1"></span>
                 <span class="br-2"></span>
-                <span class="br-3"></span>
+                <span class="br-3"></span> -->
               </div>
             </div>
             <div class="nav nav-menu-visible">

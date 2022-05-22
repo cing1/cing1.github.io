@@ -47,7 +47,9 @@
         color: var(--color-5);
         z-index: 99;
     }
-
+    .pad.bx.bx-menu{
+        display: block;
+    }
     .pad {
         display: block;
         cursor: pointer;
@@ -56,15 +58,8 @@
         right: 10px;
         position: absolute;
         z-index: 99;
-    }
-
-    .pad span {
-        background-color: var(--color-5);
-        display: block;
-        height: 4px;
-        width: 28px;
-        margin: 8px auto;
-        border-radius: 2px;
+        font-size: 45px;
+        color: var(--color-5);
     }
 
     /* navvvv */
@@ -78,7 +73,9 @@
         align-items: center;
         transition: all 0.2s;
         position: inherit;
-    }
+    box-shadow: 0 8px 10px #000;}
+
+.nav {}
 
     .nav-menu-visible {
         transform: translate(0px, -920px);

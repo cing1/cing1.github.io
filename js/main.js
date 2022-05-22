@@ -8,6 +8,7 @@ const navMenu = document.querySelector('.nav');
 const padToggle = document.querySelector('.pad');
 padToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
+    padToggle.classList.toggle('bx-x');
 });
 
 // menu state
