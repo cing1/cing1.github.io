@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 /* blogs */
 
-#blog{
+#blog {
     height: auto;
     width: 100%;
     justify-content: center;
@@ -10,7 +10,8 @@
     padding: 0 20px;
     padding-top: 60px;
 }
-.blog-container{
+
+.blog-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -19,57 +20,68 @@
     padding-bottom: 80px;
     justify-content: center;
 }
-.blog-card{
+
+.blog-card {
     display: flex;
     width: 80%;
     height: 200px;
     max-width: var(--breakpoint-extra-large);
     padding: 2px 2px;
     border-radius: 12px;
-    /* border: 2px solid #aaf; */
     box-shadow: 0 0 12px #000;
 }
-.blogs{
+
+.blogs {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     width: 100%;
-    height: 1500px;
-    
-flex-direction: column;align-items: center;}
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
 
-.blog-card img{
+.blog-card img {
     width: 274px;
     border-radius: 12px;
 
 }
-.blogs .prev{
+
+.blogs .prev {
     padding: 20px;
 }
-.blogs a{
-    color: var(--color-2);;
+
+.blogs a {
+    color: var(--color-2);
+    ;
     text-decoration: none;
     font-size: 18px;
 }
-.blogs h3{
+
+.blogs h3 {
     padding-top: 10px;
     color: #000;
     font-size: 14px;
 }
+
 @media only screen and (max-width: 540px) {
-    .blog-card{
+    .blog-card {
         width: 100%;
         height: 120px;
     }
-    .blog-card img{
+
+    .blog-card img {
         width: 100px;
-        
+
     }
-    .blogs .prev{
+
+    .blogs .prev {
         padding: 2px;
     }
-    .blogs a, .blogs h3{
+
+    .blogs a,
+    .blogs h3 {
         font-size: 1rem;
     }
 }
