@@ -16,6 +16,9 @@
     #preloader {
         background-size: 40%;
     }
+    .titulo h1{
+        font-size: 1rem;
+    }
     .navbar {
         position: fixed;
         display: flex;
@@ -73,7 +76,7 @@
         align-items: center;
         transition: all 0.2s;
         position: inherit;
-    box-shadow: 0 8px 10px #000;}
+    box-shadow: 0 10px 50px #000;}
 
 .nav {}
 
