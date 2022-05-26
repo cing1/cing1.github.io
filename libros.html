@@ -1,40 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/ico/icon.png" rel="icon" type="image/png">
-    <title>CING</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/libros.css">
-    <link href="assets/boxicons.min.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <script src="js/main.js/"></script>
-    <script src="src/navbar.js"></script>
-    <script src="src/footer-copyrigth.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-  </head>
-    <body>
-      <div id="preloader"></div>
-      <header>
-        <nav-bar></nav-bar>
-      </header>
-      <section id="iframe-section">
-          <div class="iframe-container">
-              <iframe allowfullscreen="true" delayms="0" frameborder="0" height="100%" mozallowfullscreen="true" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTcKBpVrlcugfhZaq2WX9tglFnGWcjFT1vesosydzB3QNbfIKS5A6rFU_0bsU_ntbBgh1e3OlPSo-qe/pubhtml?widget=true&amp;headers=false" webkitallowfullscreen="true" width="100%"></iframe>
-          </div>
-      </section>
-      
-      <footer>
-        <footer-copyrigth></footer-copyrigth>
-      </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="img/ico/icon.png" rel="icon" type="image/png">
+  <title>CING</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/libros.css">
+  <link href="assets/boxicons.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <script src="js/main.js/"></script>
+  <script src="src/navbar.js"></script>
+  <script src="src/footer-copyrigth.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-      <script src="js/main.js"></script>
-      <script src="src/navbar.js"></script>
-      <script src="src/footer-copyrigth.js"></script>
-    </body>
-    
+</head>
+
+<body>
+  <!-- <div id="preloader"></div> -->
+  <header>
+    <nav-bar></nav-bar>
+  </header>
+  <section id="library-section">
+    <div class="titulo">
+      <h1>Biblioteca</h1>
+    </div>
+    <div class="display-style-btns">
+      <button type="button" id="grid-active-btn">
+        <i class="bx bxs-grid"></i>
+      </button>
+      <button type="button" id="details-active-btn">
+        <i class="bx bx-list-ul"></i>
+      </button>
+    </div>
+    <div id="ulList" class="libContainer">
+      <div class="libList">
+        <h1>Contenido</h1>
+        <ul>
+          <li class="list activeList"><a href="#calculo1">Cálculo 1</a></li>
+          <li class="list"><a href="#calculo2">Cálculo 2</a></li>
+          <li class="list"><a href="#ecuaciones-diferenciales">Ecuaciones Diferenciales</a></li>
+          <li class="list"><a href="#algebra-lineal">Algebra Lineal</a></li>
+          <li class="list"><a href="#fisica">Física</a></li>
+          <li class="list"><a href="#isostatica">Isostática</a></li>
+          <li class="list"><a href="#isostatica2">Isostática 2</a></li>
+          <li class="list"><a href="#resistencia-de-materiales">Resistencia de Materiales</a></li>
+          <li class="list"><a href="#resistencia-de-materiales2">Resistencia de Materiales 2</a></li>
+        </ul>
+      </div>
+      <div class="library-container">
+        <div id="calculo1" class="fileContent activeFileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1v044bcoC9vmpSr34rMTsRj6Zui-w_Ow5/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Calculo Diferencial e Integral - Mauricio A. Vilches e Maria L. Correa.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Calculo Diferencial e Integral - Mauricio A. Vilches e Maria L. Correa.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/19EMLymOQ5Bhrd2xmwBKKhqXf9bRNNXCr/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/3000 Problemas - Demidovich.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>3000 Problemas - Demidovich.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1HE6mjjyZ9EY2hJlzIz3DQ2Lisf1obadC/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Apuntes Cálculo 1 - SCEIC.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Apuntes Cálculo 1 - SCEIC.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1lOJMoBMWmbP2Sn7RcNnEeMwAe5Ay75_a/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Calculo Integral - CONAMAT.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Calculo Integral - CONAMAT.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1pGdb1_MH7DF7F8utH7ahSfCalloWVcUn/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Calculo diferencial e integral - CONAMAT.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Calculo diferencial e integral - CONAMAT.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1wJZVP6fYYB0kPbef8zVbY3K3vWkTyq2l/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Calculo Diferencial - CONAMAT.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Calculo Diferencial - CONAMAT.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1rwZ4dkr8nktw0jgb8Xfx_uABRNQkCfe7/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario - Cálculo 1 - Victor Chungara.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario - Cálculo 1 - Victor Chungara.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/18mwRbF2s2Jycs1K8q2X7OG14CNjcW-qk/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Geometria Analitica - Kindle.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Geometria Analitica - Kindle.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1tcAoxjOa2DaQJWu6tahXQcYVPQlzXwRU/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/El Calculo - Leithold  7ma Ed.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>El Calculo - Leithold  7ma Ed.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1xy5RamNyPyAt5EuuDXLQDIXePu8gq8Jp/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Cálculo diferencial en integral - Granville.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Cálculo diferencial en integral - Granville.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1QHt0i3UisKt1MasprQX5vUAhmUuSUHbi/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Apuntes y problemas de cálculo 1 -  V.  Chungara.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Apuntes y problemas de cálculo 1 -  V.  Chungara.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1NyyCBEDAltLM5MECFtwX8n86ZyTgescX/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Cálculo de Una Variable - James Stewart 6a ed.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Cálculo de Una Variable - James Stewart 6a ed.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1W8vjdhMYGr6fAnsxhQNeqNISMu_cb7d-/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Cálculo con Geometría Analítica -  Earl Swokowski (2ed)..pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Cálculo con Geometría Analítica -  Earl Swokowski (2ed)..pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1cfuQW-uzykIVpXt1Ei-ME332fKGRvKKY/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Calculo y Geometria Analítica - Larson - Hostetler - Edwards (3ed).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Calculo y Geometria Analítica - Larson - Hostetler - Edwards (3ed).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1XyEDaCVNAMM8f_eJJnckAIn60Jcf5ZmM/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Cálculo Vectorial - Marsden & Tromba (3ed).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Cálculo Vectorial - Marsden & Tromba (3ed).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1NR5wvlahhwlJ_CL3_VVZITyckxbaTs6Y/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Geometria Analitica - Charles Lehman.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Geometria Analitica - Charles Lehman.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1D66M_hp2iM-aieh7WmYC4q-kwUXGlt6x/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Calculo Diferencial e Integral - SCHAUM Frank Ayres.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Calculo Diferencial e Integral - SCHAUM Frank Ayres.pdf</p> </div> </a> </div>
+        </div>
+        <div id="calculo2" class="fileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1V941HFCE2mVhXS0DA-jAbPoNAosZQI4k/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Cálculo de varias variables - James Steward (7ma Ed).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Cálculo de varias variables - James Steward (7ma Ed).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1aRpO82lXDgtzA4eXIQPbXFoccamc9LXE/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Cálculo de varias variables - James Steward (4ta Ed) .pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Cálculo de varias variables - James Steward (4ta Ed) .pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1Phwr71oyevXY6j5URs927ggwfXOUUQz-/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario,  Calculo II  -  Victor Chungara.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario,  Calculo II  -  Victor Chungara.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1ZVUumBBsQslxetDUd3AW3hbeLqrYPFtK/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario, Calculo Varias Variables -  James Stewart (6 Ed).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario, Calculo Varias Variables -  James Stewart (6 Ed).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1FqRAW2F94su0oyUsvx2FUvk1DrvUouDf/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Cálculo de varias variables -  James Stewart (6ta Ed).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Cálculo de varias variables -  James Stewart (6ta Ed).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/16PXKUfXes2ulrdZ3dhyg2l6w74CugP6W/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Cálculo 2 de Varias Variables - Ron Larson, Bruce Edwards   9na Ed.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Cálculo 2 de Varias Variables - Ron Larson, Bruce Edwards   9na Ed.pdf</p> </div> </a> </div>
+        </div>
+        <div id="ecuaciones-diferenciales" class="fileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1UCDLo5_ZkqiZ8SNjXKIPXxYffzSNrK1h/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/ Ecuaciones Diferenciales - Dennis G. Zill  (6ta Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p> Ecuaciones Diferenciales - Dennis G. Zill  (6ta Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1HisO1rgeTHz78K_7MDgF-udAE5m-rxEP/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Ecuaciones Diferenciales y problemas - Edwards (4ta Ed).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Ecuaciones Diferenciales y problemas - Edwards (4ta Ed).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1PYWPJ2sT9Qx2kKBpgo9aFF43JAPvpwer/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Ecuaciones Diferenciales Aplicadas -  Spiegel (3a edición).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Ecuaciones Diferenciales Aplicadas -  Spiegel (3a edición).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/164tQxk5sA_OZHd-YB3ftksVrCVqRTk5s/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Ecuaciones Diferenciales - R. Nagle, E. Saff & A. Snider (4ta Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Ecuaciones Diferenciales - R. Nagle, E. Saff & A. Snider (4ta Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1N2cMBTWaRSq8OUb_ObcI23LNt0feRmxX/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Ecuaciones diferenciales - G. Makarenko.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Ecuaciones diferenciales - G. Makarenko.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/17vF7fXRc7l2-hSBy8ZT_W1pHwZ3lKDuF/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Ecuaciones diferenciales con aplicaciones de modelado - Zill Dennis (9na Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Ecuaciones diferenciales con aplicaciones de modelado - Zill Dennis (9na Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1B8tN7IPAIN23ix1TbP0E8LopD5ZHP8cM/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario, Ecuaciones Diferenciales - Makarenko.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario, Ecuaciones Diferenciales - Makarenko.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1xdLqHEOSNkhXnq3aFqvNO6o5ZfGJBLRl/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Ecuaciones Diferenciales - Victor Chungara.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Ecuaciones Diferenciales - Victor Chungara.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1JjdJfNWgJfKjoNj2IBrCo4wQ304UnjGj/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Apuntes Ecuaciones diferenciales - SCEIC.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Apuntes Ecuaciones diferenciales - SCEIC.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1YUSq5I2K_2biv6JU2Darf0_iKa8zchBi/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Ecuaciones Diferenciales - Schaum, Richard. Bronson.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Ecuaciones Diferenciales - Schaum, Richard. Bronson.pdf</p> </div> </a> </div>
+        </div>
+        <div id="algebra-lineal" class="fileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1xuXGnBXU3xGUu8Rsra5QdOxv5jk2PJwl/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Algebra lineal - Stanley Grossman (2da Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Algebra lineal - Stanley Grossman (2da Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1W6WLf1Qu54sEHKsrbX-XBk8u9paywCaA/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Álgebra lineal - Bernard Kolman. David R. Hill  (8va Ed) .pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Álgebra lineal - Bernard Kolman. David R. Hill  (8va Ed) .pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1JL2iBc9fbGh9c0WcHJlLPxolny3LwzZK/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Apuntes de álgebra 2 - SCIC.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Apuntes de álgebra 2 - SCIC.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1v-uGYNRvmiVdSXWIUlJzY5l-gTxmgbIo/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Álgebra Lineal - V. V. Voevodin - MIR.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Álgebra Lineal - V. V. Voevodin - MIR.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1e24wTWU-Bpj0Pr2hX06jO4e9aQ35HpqZ/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario - Introducción al Algebra Lineal - Howard Anton 9na Ed.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario - Introducción al Algebra Lineal - Howard Anton 9na Ed.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1rTez2lG0v-DD8u8Qx-Zt9n0PA3V-xMqn/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Introducción al álgebra lineal - Howard Anton 3ra Ed.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Introducción al álgebra lineal - Howard Anton 3ra Ed.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1R-urm03aqhKx3UoBqBzMPft1fUH039sh/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Algebra Lineal y sus Aplicaciones David C. Lay  3ra Edición.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Algebra Lineal y sus Aplicaciones David C. Lay  3ra Edición.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/14h3lXhSQO3az1WlrBEjZSMLwHDSlHhms/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Álgebra lineal con aplicaciones - William. L. Perry.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Álgebra lineal con aplicaciones - William. L. Perry.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1Qc_F-B0MuQOUqZ36usOGm-xZn4ndylo1/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Álgebra Lineal - Stanley Grossman 7ma Edición.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Álgebra Lineal - Stanley Grossman 7ma Edición.pdf</p> </div> </a> </div>
+        </div>
+        <div id="fisica" class="fileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1EpsNuxiDcISwjuteJu292xSffQVPJKSz/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física- Resnick Vol.1.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física- Resnick Vol.1.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1eTlYaoHuLQDlCTWnIKGh2uWByW52n82w/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física general - Burmano.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física general - Burmano.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1c1DDXbrAPTgQZ4ABgddYlElWP77qhXFq/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física - Raymond A. Serway (Tomo1, 6Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física - Raymond A. Serway (Tomo1, 6Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1B884lvo_lbL-eGcwBN8FTPSBbP5Rn9Hr/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física - Serway Jewett (Vol1, 7ma Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física - Serway Jewett (Vol1, 7ma Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/17jWx9qj-I0_Pc92hTvgfKbwmYITfJ3Q3/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física - Gialcoli (Vol 1, 6ta Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física - Gialcoli (Vol 1, 6ta Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1ny-aLzkoapuwBWg7eztRdWpK_YUtmGnY/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física Universitaria - Sears Zemansky (Vol1 12va Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física Universitaria - Sears Zemansky (Vol1 12va Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1exUvyqiRX-z5o0EHmqT5DiG1mnVSPm7B/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física Universitaria - Sears Zemanski (Vol.1 - 11ed).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física Universitaria - Sears Zemanski (Vol.1 - 11ed).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1OpYfVbGXbwelt0KGSnc6oOxqAX0eyzJI/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física - Paul A Tipler (3ra Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física - Paul A Tipler (3ra Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1hp500l0cU9rL5jY0GJczimRzhmFVeASe/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Fisica -  Robert Resnick (Vol 1, 3Ed).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Fisica -  Robert Resnick (Vol 1, 3Ed).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1B8PpyN6Mae25oY0hJX7RembFggHGgtO8/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Fisica - Alosnso Finn (Vol 1).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Fisica - Alosnso Finn (Vol 1).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1PA2QVuCHTJVeREd-ULYhRri2aRuOuC0l/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario, Física - Serway.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario, Física - Serway.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1heIOo8qS4PcQSDkSGHm_F12C2YEmy7Bz/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Física general - Shaum.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Física general - Shaum.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1LgOIsVngGP96q_7JrIDQaDhbZ-7QeHSx/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Fisica - Tipler - Vol1 2.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Fisica - Tipler - Vol1 2.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/11sPLqp98tTrIe_dyeF96dAHbgTFhf8_s/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/FISICA I - Luis Rodríguez Valencia.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>FISICA I - Luis Rodríguez Valencia.pdf</p> </div> </a> </div>
+        </div>
+        <div id="isostatica" class="fileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1S8foU-fSacSyYUqO38cAWIrXL5zjRMaS/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario, Mecanica de fluidos - Streeter (9na Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario, Mecanica de fluidos - Streeter (9na Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1ww46nrRV8lyhQCTJ722FLrCbH6kG8mvB/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Estática Mecánica para Ingeniería - Bedford.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Estática Mecánica para Ingeniería - Bedford.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1BGwAi_Kcq-NgnVjdsqxMFWK-QbAQLMD6/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Mecánica Vectorial para Ingenieros Estática - Beer Johnston (9na Edición).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Mecánica Vectorial para Ingenieros Estática - Beer Johnston (9na Edición).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1NH25ayTAN52yDnZO_bdu6DKowjPlv2DH/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Mecánica Para Ingenieros Estática - J. L. Meriam (3ra Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Mecánica Para Ingenieros Estática - J. L. Meriam (3ra Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1NAzaWeqfLrV5KQSUnvMGB-w9AhT0bIOL/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Estática - R.C.Hibbeler (12va Edición).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Estática - R.C.Hibbeler (12va Edición).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1aSM_KvNSM0a6nuhX1ECSOwgXAMBAwGTZ/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Análisis Estructural - R. C. Hibbeler (8va Edición).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Análisis Estructural - R. C. Hibbeler (8va Edición).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1sSpp24TjIEJG_ZW7fS7Wfkf1Tr6xc9jP/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Analisis Estructural - Norris y Wilbur (2da Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Analisis Estructural - Norris y Wilbur (2da Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1VkGF1azcMlKYG7989PK5zVpz57aDKJcN/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario, Mecánica para ingenieros, Estática.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario, Mecánica para ingenieros, Estática.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1A0A8hagQ1QRlRKWXZGWYalvOzXvNZSYR/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/solucionario, Estática - Hibbeler (12va Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>solucionario, Estática - Hibbeler (12va Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1rpmtCW29l-kvZr1Cz40vpeCuRqPh9XiC/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Apuntes de Isostática 1 - SCEIC.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Apuntes de Isostática 1 - SCEIC.pdf</p> </div> </a> </div>
+        </div>
+        <div id="isostatica2" class="fileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1qHl5ea98Bauh9C0jsNjcRBCg1twvJOP4/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Mecánica Para Ingenieros Estática - J. L. Meriam (3ra Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Mecánica Para Ingenieros Estática - J. L. Meriam (3ra Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1KidGGUgUdfo77vCHxELYaEJGnFLYnkF-/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario, Mecanica Vetorial para Ingenieros (9ed cap-6-10-estatica).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario, Mecanica Vetorial para Ingenieros (9ed cap-6-10-estatica).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1QntyLiFkLWfxLc3kjtf0m9FzNSpcmGeE/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Teoria Elemental de Estructuras - Yuan Yu Hsiehs.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Teoria Elemental de Estructuras - Yuan Yu Hsiehs.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1XyfJEXA8mLZklmolUJS35MC8lrxdxH76/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Apuntes Isostática 2 - SCEIC.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Apuntes Isostática 2 - SCEIC.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1xFZ5tXuSuGGlkcQGpXeikgFlmFC2I26J/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Estática Mecánica para Ingeniería - Bedford.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Estática Mecánica para Ingeniería - Bedford.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1MgJs9Lwu6Jw95Y6J7pra-1D9JMvm747r/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Mecánica Vectorial para Ingenieros Estática - Beer Johnston (9na Edición).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Mecánica Vectorial para Ingenieros Estática - Beer Johnston (9na Edición).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1xozofMnd2iZl2HiViaZ3trqpy1W-g7kh/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Estática - R.C.Hibbeler (12va Edición).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Estática - R.C.Hibbeler (12va Edición).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1fc2qX2-EwdPzhqbd-g1L55Pl23MzVGef/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Análisis Estructural - R. C. Hibbeler (8va Edición).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Análisis Estructural - R. C. Hibbeler (8va Edición).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1xwzkB2HHqlYCfm8gvWtAMEOjvNpZC2YV/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Analisis Estructural - Norris y Wilbur (2da Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Analisis Estructural - Norris y Wilbur (2da Edicion).pdf</p> </div> </a> </div>
+        </div>
+        <div id="resistencia-de-materiales" class="fileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1jMLDnYcwSAhNUf-WdmWphbJ_D0HYiIk3/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Resistencia de materiales - Timoshenko (Tomo_II).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Resistencia de materiales - Timoshenko (Tomo_II).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/15QzE5jN3aRsXrRsXPhqErPxD75TSAhe4/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Resistencia de Materiales - Robert L. Mott (5ta Edición).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Resistencia de Materiales - Robert L. Mott (5ta Edición).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1GYjjOcsuscyQSuLVqQcuj75q8bYcrv9O/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Problemas de Resistencia de  Materiales - Volmir.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Problemas de Resistencia de  Materiales - Volmir.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1q_BulYIeWsR7MXx8I2UDWvesy1gKjKYp/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Problemas de resistencia de materiales - Eduardo Martinez.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Problemas de resistencia de materiales - Eduardo Martinez.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1MuGXxs7UjRi5cqQmBYeZrYmEEgOJNbwo/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Mecánica de Sólidos - Egor P. Popov (2da Edicion).pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Mecánica de Sólidos - Egor P. Popov (2da Edicion).pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/15gWYSeXpGMJ6QtOpnq61-hMRErX6ClYA/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Apuntes Resistencia de materiales 1 - SCEIC.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Apuntes Resistencia de materiales 1 - SCEIC.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1D7osLU2pkRqMSz29KyB7O86_cBXzbmvX/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Problemas de Resistencia de Materiales - Miroliubov.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Problemas de Resistencia de Materiales - Miroliubov.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/13BFt0Go7jPaR-wEPYehga2k_gssqDJkP/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario_Resistencia_de_Materiales_R--Robert L. Mott.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario_Resistencia_de_Materiales_R--Robert L. Mott.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1f-rvDf0mzvz7xFSTepFMjPvDA4G3oSv1/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Formulario de superposición.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Formulario de superposición.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1_jIRF7assp68mG9vsgk2TigBWin_jXrZ/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Problemas de resistencia de materiales - Eduardo Martinez.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Problemas de resistencia de materiales - Eduardo Martinez.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1BZqFCs75rflcttV8-j2yRNfN7MI06VHV/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Mecánica de materiales - Hibbeler 8a edición.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Mecánica de materiales - Hibbeler 8a edición.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1bzt070CqXD0_0TD_EMBx_ao8NP1jbAC-/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Resistencia de Materiales - Dr. Genner Villarreal C..pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Resistencia de Materiales - Dr. Genner Villarreal C..pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1YfaRaDP7e3dCi_UXWJkl68zcRFW-5jbn/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/resistencia de materiales apuntes.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>resistencia de materiales apuntes.pdf</p> </div> </a> </div>
+        </div>
+        <div id="resistencia-de-materiales2" class="fileContent">
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1p6zsbTpDl0FUGqPXwiXr_QTZ9EV390a3/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Resistencia de materiales - Edgar Grandon Vol. 2.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Resistencia de materiales - Edgar Grandon Vol. 2.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1cFzmXIgl7vTBAiBXceWU4b5EOFytr8_l/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Solucionario, Resistencia de Materiales - Singer.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Solucionario, Resistencia de Materiales - Singer.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1stTJNBx_iNcJF8SuhwZnAtoAxMBk4jX2/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Apuntes Resistencia de materiales 2 - SCEIC.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Apuntes Resistencia de materiales 2 - SCEIC.pdf</p> </div> </a> </div>
+          <div class='fileCard'> <a href='https://drive.google.com/file/d/1skYcwkkDz0rXt8DX7dnt6f74o1y7bjXA/view?usp=drivesdk' target='_blank'> <div class='cover-file'> <img src='img/libros/Resistencia de Materiales - Singer.pdf.png' alt='default image'> </div> <div class='card-footer'> <i class='bx bxs-file-pdf'></i> <p>Resistencia de Materiales - Singer.pdf</p> </div> </a> </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <!-- <footer-copyrigth></footer-copyrigth> -->
+  </footer>
+  <script>
+    const itemList = document.querySelector('.library-container');
+    const gridViewBtn = document.getElementById('grid-active-btn');
+    const detailsViewBtn = document.getElementById('details-active-btn');
+    gridViewBtn.classList.add('active-btn');
+
+    gridViewBtn.addEventListener('click', () => {
+      gridViewBtn.classList.add('active-btn');
+      detailsViewBtn.classList.remove('active-btn');
+      itemList.classList.remove('listActive');
+    });
+
+    detailsViewBtn.addEventListener('click', () => {
+      detailsViewBtn.classList.add('active-btn');
+      gridViewBtn.classList.remove("active-btn");
+      itemList.classList.add("listActive");
+    });
+  </script>
+  <script src="js/main.js"></script>
+  <script src="src/navbar.js"></script>
+  <script src="src/footer-copyrigth.js"></script>
+</body>
+
 </html>
