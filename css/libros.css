@@ -119,6 +119,7 @@
     /* margin-left: 10px; */
     overflow-y: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .fileContent {
