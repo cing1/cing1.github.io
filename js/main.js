@@ -19,7 +19,7 @@ console.log(hideIcon);
 hideIcon.addEventListener('click', () => {
     console.log(hideIcon);
     hideContent.classList.toggle('contentHide');
-    hideIcon.classList.toggle('bx-chevron-right');
+    hideIcon.classList.toggle('bx-chevron-up');
 });
 // menu state
 var btnContainer = document.getElementById("nav");

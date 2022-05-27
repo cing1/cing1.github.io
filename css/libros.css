@@ -6,7 +6,7 @@
 }
 
 #library-section .titulo h1 {
-    padding: 0;
+    padding: 0 20px;
     font-size: 18px;
 }
 
@@ -16,16 +16,22 @@
     width: 100%;
     padding: 20px;
     padding-top: 0;
+    overflow: hidden;
 }
 
 .libList {
+    position: fixed;
     display: flex;
     width: 240px;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 200px); */
+    height: 270px;
     border-radius: 10px;
-    border: solid 2px #aaa;
+    border: solid 2px rgb(73, 71, 71);
+    background-color: rgba(3, 0, 14, 0.856);
+    /* box-shadow: 0 0 10px #000; */
     padding: 5px;
     transition: all 0.3s;
+    top: 78px;
 }
 .libList .listContent{
     width: auto;
@@ -34,6 +40,7 @@
 .libList h1{
     font-family: 'Varela Round';
     color: rgb(144, 235, 247);
+    font-size: 15px;
 }
 .libList li {
     padding: 4px;
@@ -53,6 +60,7 @@
     width: 20px;
     color: #f0f;
     overflow: visible;
+    transform: translateY(-5px);
 }
 .hide-list:hover{
     color: aqua;
@@ -63,9 +71,8 @@
 }
 /* lis hide */
 .libList.contentHide{
-    /* width: 100px; */
-    transform: translateX(-195px);
-    border: solid transparent;
+    height: 30px;
+    box-shadow: 0 0 0px #000;
 }
 
 
@@ -89,13 +96,14 @@
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    color: #f0f;
 }
 
 .display-style-btns button:hover {
     color: var(--color-1);
 }
 
-.active-btn {
+.display-style-btns button.active-btn {
     color: var(--color-1);
 }
 
@@ -106,13 +114,13 @@
 .library-container {
     /* width: calc(100% - 240px); */
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 125px);
     border-radius: 10px;
-    border: solid 2px rgb(100, 100, 100);
+    border: solid 2px #0ff;
     margin: 0px auto;
     padding: 20px 0;
-    margin-left: 10px;
-    overflow: scroll;
+    /* margin-left: 10px; */
+    overflow-y: scroll;
 }
 
 .fileContent {
@@ -217,8 +225,5 @@ align-items: stretch;align-content: space-between;}
 
 
 .library-container.listActive .fileCard p:hover {
-    /* background-color: rgb(30, 36, 73); */
     color: none;
-    /* border-radius: 3px; */
-    /* padding: 5px 3px; */
 }
