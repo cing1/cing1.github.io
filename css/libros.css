@@ -16,7 +16,6 @@
     width: 100%;
     padding: 20px;
     padding-top: 0;
-    overflow: hidden;
 }
 
 .libList {
@@ -66,9 +65,7 @@
     color: aqua;
     cursor: pointer;
 }
-.activeList a {
-    /* color: var(--color-4); */
-}
+
 /* lis hide */
 .libList.contentHide{
     height: 30px;
@@ -121,6 +118,7 @@
     padding: 20px 0;
     /* margin-left: 10px; */
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .fileContent {
