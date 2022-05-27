@@ -19,11 +19,17 @@
 }
 
 .libList {
+    display: flex;
     width: 240px;
     height: calc(100vh - 100px);
     border-radius: 10px;
     border: solid 2px #aaa;
     padding: 5px;
+    transition: all 0.3s;
+}
+.libList .listContent{
+    width: auto;
+    overflow: hidden;
 }
 .libList h1{
     font-family: 'Varela Round';
@@ -38,11 +44,32 @@
     text-decoration: none;
     color: rgb(128, 181, 250);
     font-weight: 200;
+    text-overflow: hidden;
 }
 
+
+.hide-list{
+    font-size: 30px;
+    width: 20px;
+    color: #f0f;
+    overflow: visible;
+}
+.hide-list:hover{
+    color: aqua;
+    cursor: pointer;
+}
 .activeList a {
     /* color: var(--color-4); */
 }
+/* lis hide */
+.libList.contentHide{
+    /* width: 100px; */
+    transform: translateX(-195px);
+    border: solid transparent;
+}
+
+
+
 
 /* grid list btn style */
 .display-style-btns {
@@ -77,9 +104,10 @@
 
 
 .library-container {
-    width: calc(100% - 240px);
+    /* width: calc(100% - 240px); */
+    width: 100%;
     height: calc(100vh - 100px);
-    border-radius: 15px;
+    border-radius: 10px;
     border: solid 2px rgb(100, 100, 100);
     margin: 0px auto;
     padding: 20px 0;
@@ -166,11 +194,13 @@ align-items: stretch;align-content: space-between;}
 /* list active */
 .library-container.listActive {
     flex-direction: column;
-    gap: 0;
+}
+.library-container.listActive .fileContent{
+    gap: 0px;
 }
 
 .library-container.listActive .fileCard {
-    height: 28px;
+    height: 38px;
     width: 90%;
     border: solid 1px rgb(114, 111, 111);
     border-left: transparent;
@@ -181,11 +211,14 @@ align-items: stretch;align-content: space-between;}
     display: none;
 }
 
+.library-container.listActive .fileCard .card-footer:hover{
+    background-color: rgb(30, 48, 95);
+}
 
 
 .library-container.listActive .fileCard p:hover {
-    background-color: rgb(30, 36, 73);
-    color: #fff;
+    /* background-color: rgb(30, 36, 73); */
+    color: none;
     /* border-radius: 3px; */
     /* padding: 5px 3px; */
 }

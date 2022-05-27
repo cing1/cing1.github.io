@@ -3,6 +3,7 @@ var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
     loader.style.display = "none";
 })
+
 // menu hide-visible in responsive
 const navMenu = document.querySelector('.nav');
 const padToggle = document.querySelector('.pad');
@@ -10,7 +11,16 @@ padToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
     padToggle.classList.toggle('bx-x');
 });
-
+// menu hide-visible in responsive
+const hideContent = document.querySelector('.libList');
+console.log(hideContent);
+const hideIcon = document.querySelector('.hide');
+console.log(hideIcon);
+hideIcon.addEventListener('click', () => {
+    console.log(hideIcon);
+    hideContent.classList.toggle('contentHide');
+    hideIcon.classList.toggle('bx-chevron-right');
+});
 // menu state
 var btnContainer = document.getElementById("nav");
 var menus = btnContainer.getElementsByClassName("menu");
@@ -38,6 +48,8 @@ for (var i = 0; i < classList.length; i++) {
     
   });
 };
+
+
 
 
 
