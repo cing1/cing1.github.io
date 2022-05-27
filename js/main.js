@@ -11,43 +11,40 @@ padToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
     padToggle.classList.toggle('bx-x');
 });
-// menu hide-visible in responsive
+// menu content hide-visible in responsive
 const hideContent = document.querySelector('.libList');
-console.log(hideContent);
 const hideIcon = document.querySelector('.hide');
-console.log(hideIcon);
 hideIcon.addEventListener('click', () => {
-    console.log(hideIcon);
     hideContent.classList.toggle('contentHide');
     hideIcon.classList.toggle('bx-chevron-up');
 });
 // menu state
-var btnContainer = document.getElementById("nav");
-var menus = btnContainer.getElementsByClassName("menu");
-for (var i = 0; i < menus.length; i++) {
-  menus[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-};
+// var btnContainer = document.getElementById("nav");
+// var menus = btnContainer.getElementsByClassName("menu");
+// for (var i = 0; i < menus.length; i++) {
+//   menus[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// };
 // lib content state
-var navList = document.getElementById("ulList");
-var classList = navList.getElementsByClassName("list");
-var fileContainer = navList.getElementsByClassName("fileContent")
-for (var i = 0; i < classList.length; i++) {
-    // console.log("i:   " + i);
-  classList[i].addEventListener("click", function() {
-    var currentClass = document.getElementsByClassName("activeList");
-    currentClass[0].className = currentClass[0].className.replace(" activeList", "");
-    this.className += " activeList";
-    var currentClass2 = document.getElementsByClassName("activeFileContent");
-    console.log(i);
-    currentClass2[0].className = currentClass2[0].className.replace(" activeFileContent", "");
-    // fileContainer[i].className = fileContainer[i].className.add(" activeFileContent");
+// var navList = document.getElementById("ulList");
+// var classList = navList.getElementsByClassName("list");
+// var fileContainer = navList.getElementsByClassName("fileContent")
+// for (var i = 0; i < classList.length; i++) {
+//     // console.log("i:   " + i);
+//   classList[i].addEventListener("click", function() {
+//     var currentClass = document.getElementsByClassName("activeList");
+//     currentClass[0].className = currentClass[0].className.replace(" activeList", "");
+//     this.className += " activeList";
+//     var currentClass2 = document.getElementsByClassName("activeFileContent");
+//     console.log(i);
+//     currentClass2[0].className = currentClass2[0].className.replace(" activeFileContent", "");
+//     // fileContainer[i].className = fileContainer[i].className.add(" activeFileContent");
     
-  });
-};
+//   });
+// };
 
 
 
