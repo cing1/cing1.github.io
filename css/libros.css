@@ -174,7 +174,7 @@ align-items: stretch;align-content: space-between;}
     align-items: center;
     height: 38px;
     margin-bottom: 0px;
-}
+/* width: 100%; */overflow: hidden;}
 .fileCard .card-footer i{
     font-size: 25px;
     color: rgb(248, 58, 146);
@@ -182,12 +182,12 @@ align-items: stretch;align-content: space-between;}
 .fileCard p {
     width: 100%;
     color: rgb(213, 186, 224);
-    overflow: hidden;
-}
+    /* overflow: hidden; */
+/* text-overflow: inherit; */}
 
 .fileCard a {
     text-decoration: none;
-}
+/* width: 100%; */}
 
 .fileCard p:hover {
     display: flex;
