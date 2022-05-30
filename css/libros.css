@@ -106,7 +106,7 @@
     background-color: transparent;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    color: #f0f;
+    color: rgb(184, 180, 184);
 }
 
 .display-style-btns button:hover {
