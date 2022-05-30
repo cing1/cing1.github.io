@@ -1,46 +1,50 @@
 #library-section {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: var(--color-bg);
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
-#library-section .titulo h1 {
+.head .titulo h1 {
     padding: 0 20px;
     font-size: 18px;
 }
 
-/* list content */
-.libContainer {
+.nav-lib {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.combo-title {
     display: flex;
     width: 100%;
-    padding: 20px;
-    padding-top: 0;
+    height: 20px;
+    justify-content: space-between;
 }
 
 .libList {
-    position: fixed;
-    display: flex;
-    width: 240px;
-    /* height: calc(100vh - 200px); */
+    position: absolute;
+    width: 270px;
     height: 270px;
     border-radius: 10px;
     border: solid 2px rgb(73, 71, 71);
     background-color: rgba(3, 0, 14, 0.856);
-    /* box-shadow: 0 0 10px #000; */
     padding: 5px;
     transition: all 0.3s;
-    top: 78px;
-}
-.libList .listContent{
-    width: auto;
     overflow: hidden;
-}
-.libList h1{
+    top: 72px;
+z-index: 10;}
+
+
+.libList h1 {
     font-family: 'Varela Round';
     color: rgb(144, 235, 247);
     font-size: 15px;
 }
+
 .libList li {
     padding: 4px;
     list-style-type: none;
@@ -52,24 +56,27 @@
     font-weight: 200;
     text-overflow: hidden;
 }
+.libList a:hover{
+    color: #f0f;
+}
 
-
-.hide-list{
+.hide-list {
     font-size: 30px;
     width: 20px;
+    height: 100%;
     color: #f0f;
     overflow: visible;
     transform: translateY(-5px);
 }
-.hide-list:hover{
+
+.hide-list:hover {
     color: aqua;
     cursor: pointer;
 }
 
 /* lis hide */
-.libList.contentHide{
+.libList.contentHide {
     height: 30px;
-    box-shadow: 0 0 0px #000;
 }
 
 
@@ -80,8 +87,9 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: flex-end;
+
     max-width: var(--breakpoint-extra-large);
+    justify-content: flex-end;
 }
 
 .display-style-btns button {
@@ -111,15 +119,57 @@
 .library-container {
     /* width: calc(100% - 240px); */
     width: 100%;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 105px);
     border-radius: 10px;
     border: solid 2px #0ff;
     margin: 0px auto;
-    padding: 20px 0;
+    padding: 2px 0;
     /* margin-left: 10px; */
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+.content-title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    z-index: 100;
+
+}
+.content-title::after{
+    content: "";
+    height: 4px;
+    width: 95%;
+    background-color: #f0f;
+    border-radius: 50vh;
+    margin: auto;
+    transform: translateY(3px);
+}
+
+.library-container h3 {
+    width: auto;
+    font-family: 'Varela Round';
+    letter-spacing: 2px;
+    color: rgb(206, 174, 206);
+    font-size: 1rem;
+    background-color: var(--color-bg);
+    border-radius: 50vh;
+    border: solid 2px #f0f;
+    padding: 0 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.library-container h3::after {
+    content: "";
+    height: 10px;
+    width: 98%;
+    border-radius: 50vh;
+    background-color: rgb(158, 9, 121);
+    bottom: 5px;
 }
 
 .fileContent {
@@ -129,17 +179,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px 0;
-    padding-bottom: 20px;
+    padding: 20px 0;
 
 }
 
-.fileContent::after {
-    content: "";
-    height: 5px;
-    width: 98%;
-    border-radius: 50vh;
-    background-color: rgb(95, 95, 99);
-}
+
 
 .fileCard {
     display: grid;
@@ -149,8 +193,11 @@
     border: solid 2px rgb(114, 111, 111);
     font-size: 12px;
     transition: all 0.3s;
-align-items: stretch;align-content: space-between;}
-.fileCard .cover-file{
+    align-items: stretch;
+    align-content: space-between;
+}
+
+.fileCard .cover-file {
     width: 100%;
     height: 260px;
     background-color: rgb(14, 13, 13);
@@ -161,6 +208,7 @@ align-items: stretch;align-content: space-between;}
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 .fileCard img {
     width: 100%;
     height: 100%;
@@ -169,25 +217,31 @@ align-items: stretch;align-content: space-between;}
 
 }
 
-.fileCard .card-footer{
+.fileCard .card-footer {
     display: flex;
     align-items: center;
     height: 38px;
     margin-bottom: 0px;
-/* width: 100%; */overflow: hidden;}
-.fileCard .card-footer i{
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.fileCard .card-footer i {
     font-size: 25px;
     color: rgb(248, 58, 146);
 }
+
 .fileCard p {
     width: 100%;
     color: rgb(213, 186, 224);
     /* overflow: hidden; */
-/* text-overflow: inherit; */}
+    /* text-overflow: inherit; */
+}
 
 .fileCard a {
     text-decoration: none;
-/* width: 100%; */}
+    /* width: 100%; */
+}
 
 .fileCard p:hover {
     display: flex;
@@ -202,7 +256,8 @@ align-items: stretch;align-content: space-between;}
 .library-container.listActive {
     flex-direction: column;
 }
-.library-container.listActive .fileContent{
+
+.library-container.listActive .fileContent {
     gap: 0px;
 }
 
@@ -214,11 +269,12 @@ align-items: stretch;align-content: space-between;}
     border-right: transparent;
     border-radius: 0;
 }
+
 .library-container.listActive .fileCard .cover-file {
     display: none;
 }
 
-.library-container.listActive .fileCard .card-footer:hover{
+.library-container.listActive .fileCard .card-footer:hover {
     background-color: rgb(30, 48, 95);
 }
 

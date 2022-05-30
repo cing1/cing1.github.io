@@ -25,13 +25,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-1);
+    background: var(--color-4);
     border: solid 1px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff00bf;
+    background: var(--color-5);
 
 }
 
@@ -64,17 +64,17 @@ html {
 .navbar {
     position: fixed;
     display: flex;
-    height: 50px;
-    width: 99%;
-    align-items: center;
+    height: 40px;
+    width: calc(100% - 5px);
+    
     background-color: var(--color-nav);
     border: solid 2px var(--color-1);
     border-radius: 50vh;
-    margin: 5px 7px;
+    margin: 3px 5px;
     justify-content: center;
     box-shadow: 0 0 10px var(--color-1);
     z-index: 99;
-}
+align-items: center;}
 
 .logo {
     display: flex;
@@ -98,7 +98,7 @@ html {
 
 .nav {
     display: flex;
-    padding: 0px 10px;
+    padding: 0px 5px;
     width: 95%;
     justify-content: space-between;
 }
@@ -166,22 +166,18 @@ nav .active a {
 
 .search {
     display: flex;
-    width: 200px;
+    width: 180px;
     justify-content: center;
 }
 
 .searchTerm {
     width: 100%;
+    border-radius: 50vh;
     background: var(--color-1);
-    border-top: 3px solid var(--color-5);
-    border-left: 3px solid var(--color-5);
-    border-bottom: 3px solid var(--color-5);
-    border-right: none;
-    padding: 5px;
-    height: 30px;
-    border-radius: 15px 0 0 15px;
+    border: solid 3px var(--color-5);
+    height: 26px;
     outline: none;
-    /* color: #00ff88; */
+    padding: 0 8px;
 }
 
 .searchTerm:focus {
@@ -189,25 +185,22 @@ nav .active a {
 }
 
 .searchButton {
-    width: 40px;
+    position: absolute;
     height: 30px;
-    background: var(--color-1);
-    border-top: 3px solid var(--color-5);
-    border-right: 3px solid var(--color-5);
-    border-bottom: 3px solid var(--color-5);
-    border-left: transparent;
-    text-align: center;
+    background-color: transparent;
+    border: transparent;
     color: var(--color-5);
-    border-radius: 0 15px 15px 0;
     cursor: pointer;
     font-size: 20px;
+    right: 16px;
 }
 
 /*Resize the wrap to see the search bar change!*/
 .search-container {
     display: flex;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 3px;
+
 }
 
 .search-container a {
