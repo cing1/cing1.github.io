@@ -24,7 +24,8 @@
     height: 20px;
     justify-content: space-between;
 }
-.combo-title:hover{
+
+.combo-title:hover {
     cursor: pointer;
 }
 
@@ -84,16 +85,12 @@
     height: 30px;
 }
 
-
-
-
 /* grid list btn style */
 .display-style-btns {
     display: flex;
     width: 100%;
     align-items: center;
-
-    max-width: var(--breakpoint-extra-large);
+    /* max-width: var(--breakpoint-extra-large); */
     justify-content: flex-end;
 }
 
@@ -231,7 +228,8 @@
     margin-bottom: 0px;
     /* width: 100%; */
     overflow: hidden;
-/* text-overflow: ellipsis; */}
+    /* text-overflow: ellipsis; */
+}
 
 .fileCard .card-footer i {
     font-size: 25px;
@@ -295,23 +293,27 @@
 /* RESPONSIVE */
 
 @media only screen and (max-width: 800px) {
-    .fileCard{
+    .fileCard {
         height: 240px;
         width: 160px;
     }
+
     .fileCard .cover-file {
         height: calc(240px - 40px);
     }
-    .fileCard .card-footer{
+
+    .fileCard .card-footer {
         display: flex;
         align-items: flex-start;
     }
-    .fileCard p{
+
+    .fileCard p {
         /* display: flex; */
         /* align-items: flex-start; */
         line-height: 12px;
     }
-    .library-container.listActive .fileCard .card-footer{
+
+    .library-container.listActive .fileCard .card-footer {
         align-items: center;
     }
 }
