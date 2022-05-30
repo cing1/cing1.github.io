@@ -24,10 +24,13 @@
     height: 20px;
     justify-content: space-between;
 }
+.combo-title:hover{
+    cursor: pointer;
+}
 
 .libList {
     position: absolute;
-    width: 270px;
+    width: 230px;
     height: 270px;
     border-radius: 10px;
     border: solid 2px rgb(73, 71, 71);
@@ -36,7 +39,8 @@
     transition: all 0.3s;
     overflow: hidden;
     top: 72px;
-z-index: 10;}
+    z-index: 10;
+}
 
 
 .libList h1 {
@@ -56,7 +60,8 @@ z-index: 10;}
     font-weight: 200;
     text-overflow: hidden;
 }
-.libList a:hover{
+
+.libList a:hover {
     color: #f0f;
 }
 
@@ -130,7 +135,8 @@ z-index: 10;}
     scroll-behavior: smooth;
     scroll-padding-top: 30px;
 }
-.content-title{
+
+.content-title {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -139,7 +145,8 @@ z-index: 10;}
     z-index: 100;
 
 }
-.content-title::after{
+
+.content-title::after {
     content: "";
     height: 4px;
     width: 95%;
@@ -224,7 +231,7 @@ z-index: 10;}
     margin-bottom: 0px;
     /* width: 100%; */
     overflow: hidden;
-}
+/* text-overflow: ellipsis; */}
 
 .fileCard .card-footer i {
     font-size: 25px;
@@ -235,7 +242,7 @@ z-index: 10;}
     width: 100%;
     color: rgb(213, 186, 224);
     /* overflow: hidden; */
-    /* text-overflow: inherit; */
+    text-overflow: ellipsis;
 }
 
 .fileCard a {
@@ -281,4 +288,30 @@ z-index: 10;}
 
 .library-container.listActive .fileCard p:hover {
     color: none;
+}
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 800px) {
+    .fileCard{
+        height: 240px;
+        width: 160px;
+    }
+    .fileCard .cover-file {
+        height: calc(240px - 40px);
+    }
+    .fileCard .card-footer{
+        display: flex;
+        align-items: flex-start;
+    }
+    .fileCard p{
+        /* display: flex; */
+        /* align-items: flex-start; */
+        line-height: 12px;
+    }
+    .library-container.listActive .fileCard .card-footer{
+        align-items: center;
+    }
 }

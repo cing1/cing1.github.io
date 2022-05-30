@@ -51,10 +51,11 @@ padToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
     padToggle.classList.toggle('bx-x');
 });
-// menu content hide-visible in responsive
+// menu content hide-visible of libros content
+const comboBox = document.querySelector('.combo-title')
 const hideContent = document.querySelector('.libList');
 const hideIcon = document.querySelector('.hide');
-hideIcon.addEventListener('click', () => {
+comboBox.addEventListener('click', () => {
     hideContent.classList.toggle('contentHide');
     hideIcon.classList.toggle('bx-chevron-up');
 });
