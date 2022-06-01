@@ -397,6 +397,19 @@ nav .active a {
     color: #fff;
 }
 
+.box-modal-project{
+    position: fixed;
+    width: 800px;
+    height: 70vh;
+    border-radius: 10px;
+    top: 0px;
+    left: 0px;
+    margin: 25vh auto;
+    background-color: rgba(17, 17, 31, 0.925);
+    overflow: hidden;
+    box-shadow: 0 0 10px #000;
+    z-index: 100000;
+}
 
 /* ======project===== */
 #projects {

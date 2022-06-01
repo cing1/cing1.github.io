@@ -32,7 +32,7 @@
 .libList {
     position: absolute;
     width: 230px;
-    height: 270px;
+    height: 350px;
     border-radius: 10px;
     border: solid 2px rgb(73, 71, 71);
     background-color: rgba(3, 0, 14, 0.856);
