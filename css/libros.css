@@ -94,6 +94,10 @@
     justify-content: flex-end;
 }
 
+.num-files p{
+    color: #f0f;
+    font-size: 0.8rem;
+}
 .display-style-btns button {
     border: none;
     font-size: 22px;
