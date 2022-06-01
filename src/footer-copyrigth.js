@@ -1,7 +1,7 @@
 class footerCopyrigth extends HTMLElement{
     connectedCallback(){
         this.innerHTML = ` 
-        <h2> © Copyright: <span>CING</span> all rights reserved</h2>
+        <h2> ©2022 Copyright: <span>CING</span> all rights reserved</h2>
         <h3>Powered by: Mario Cesgo Solis</h3>
         `;
     }
