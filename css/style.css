@@ -398,6 +398,7 @@ nav .active a {
 }
 
 .box-modal-project{
+    display: none;
     position: fixed;
     width: 800px;
     height: 70vh;
