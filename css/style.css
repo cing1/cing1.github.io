@@ -1,4 +1,4 @@
-/* esto es un prueba par agit */
+
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 :root {
@@ -9,8 +9,10 @@
     --color-5: #ff5e00;
     --color-input: #fa1185d0;
     --color-nav: #11002e;
-    --color-nav-movile: #24045c;--color-bg: #1e1e36;
-    --color-shadow: #5e61d5;--color-footer: #04040c;
+    --color-nav-movile: #24045c;
+    --color-bg: #0b0b24;
+    --color-shadow: #5e61d5;
+    --color-footer: #04040c;
     --breakpoint-extra-large: 1100px;
 }
 
@@ -32,7 +34,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-5);
-
 }
 
 html {
@@ -52,7 +53,6 @@ html {
     z-index: 1000;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -66,7 +66,6 @@ html {
     display: flex;
     height: 40px;
     width: calc(100% - 5px);
-    
     background-color: var(--color-nav);
     border: solid 2px var(--color-1);
     border-radius: 50vh;
@@ -74,7 +73,8 @@ html {
     justify-content: center;
     box-shadow: 0 0 10px var(--color-1);
     z-index: 99;
-align-items: center;}
+    align-items: center;
+}
 
 .logo {
     display: flex;
@@ -129,10 +129,12 @@ nav .menu {
     position: relative;
 
 }
-nav .menu.active{
+
+nav .menu.active {
     color: var(--color-4);
     border-bottom: solid 4px var(--color-4);
 }
+
 /* hover border botton */
 nav a::after {
     position: absolute;
@@ -214,9 +216,11 @@ nav .active a {
     font-size: 30px;
     color: var(--color-4);
 }
-.pad.bx.bx-menu{
+
+.pad.bx.bx-menu {
     display: none;
 }
+
 /* =====SEARCH COMPONENT END===== */
 
 /* =====END MENU======= */
@@ -317,7 +321,8 @@ nav .active a {
 .titulo h1 {
     font-family: 'Varela Round';
     padding: 20px 0;
-    /* padding-bottom: 0; */color: #00ffc8;
+    /* padding-bottom: 0; */
+    color: #00ffc8;
     font-size: 2rem;
     font-weight: bolder;
 }
