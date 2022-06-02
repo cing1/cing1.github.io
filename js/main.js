@@ -51,14 +51,22 @@ padToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
     padToggle.classList.toggle('bx-x');
 });
-// menu content hide-visible of libros content
-const comboBox = document.querySelector('.combo-title')
-const hideContent = document.querySelector('.libList');
-const hideIcon = document.querySelector('.hide');
-comboBox.addEventListener('click', () => {
-    hideContent.classList.toggle('contentHide');
-    hideIcon.classList.toggle('bx-chevron-up');
-});
+
+// box modal
+const buttonCard = document.querySelector('.btn-card');
+buttonCard.addEventListener('click', () => {
+    modalView.classList.toggle('hide');
+})
+const modalView = document.querySelector('.box-modal-project');
+var closeBox = document.getElementById('close-box');
+closeBox.addEventListener('click', () => {
+    modalView.classList.toggle('hide');
+})
+
+
+
+
+
 // menu state
 // var btnContainer = document.getElementById("nav");
 // var menus = btnContainer.getElementsByClassName("menu");

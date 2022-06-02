@@ -14,6 +14,8 @@
     display: flex;
     height: 30px;
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -124,7 +126,8 @@
 
 .library-container {
     /* width: calc(100% - 240px); */
-    width: 100%;
+    /* width: 100%; */
+    max-width: 1200px;
     height: calc(100vh - 105px);
     border-radius: 10px;
     border: solid 2px #0ff;
@@ -194,6 +197,7 @@
 
 
 .fileCard {
+    position: relative;
     display: grid;
     height: 300px;
     width: 200px;
@@ -215,16 +219,41 @@
     background-repeat: no-repeat;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    overflow: hidden;
 }
 
-.fileCard img {
+.fileCard .cover-file img {
     width: 100%;
     height: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 
 }
-
+.fileCard .cover-file img:hover{
+    transform: scale(1.2);
+}
+.fileCard .direct-link{
+    position: absolute;
+    color: #0f0;
+    bottom: 40px;
+    right: 20px;
+    font-size: 25px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+.fileCard .direct-link p{
+    position: absolute;
+    white-space: nowrap;
+    color: #0f0f;
+    font-size: 10px;
+    bottom: 1px;
+}
+.fileCard .direct-link p:hover{
+    color: #0f0;
+}
+.fileCard .direct-link:hover{
+    color: #f00;
+}
 .fileCard .card-footer {
     display: flex;
     align-items: center;
@@ -243,13 +272,12 @@
 .fileCard p {
     width: 100%;
     color: rgb(213, 186, 224);
-    /* overflow: hidden; */
     text-overflow: ellipsis;
 }
 
+
 .fileCard a {
     text-decoration: none;
-    /* width: 100%; */
 }
 
 .fileCard p:hover {
@@ -291,9 +319,13 @@
 .library-container.listActive .fileCard p:hover {
     color: none;
 }
+.library-container.library-container.listActive .fileCard .direct-link{
+    bottom: 4px;
+}
 
-
-
+#libros{
+    color: var(--color-4)!important;
+}
 /* RESPONSIVE */
 
 @media only screen and (max-width: 800px) {
@@ -311,13 +343,16 @@
         align-items: flex-start;
     }
 
-    .fileCard p {
-        /* display: flex; */
-        /* align-items: flex-start; */
-        line-height: 12px;
-    }
-
     .library-container.listActive .fileCard .card-footer {
         align-items: center;
+    }
+    .library-container.listActive .fileCard p {
+        padding-right: 25px;
+    }
+    .library-container.library-container.listActive .fileCard .direct-link{
+        right: 0px;
+    }
+    .num-files p{
+        display: none;
     }
 }

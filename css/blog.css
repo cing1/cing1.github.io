@@ -1,7 +1,9 @@
 /* esto es un prueba par agit */
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 /* blogs */
-
+#mi-blog{
+    color: var(--color-4)!important;
+}
 #blog {
     height: auto;
     width: 100%;

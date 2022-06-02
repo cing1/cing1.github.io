@@ -81,19 +81,19 @@ html {
     align-items: center;
     width: 5%;
     padding-left: 10px;
-    color: var(--color-5);
 }
 
 .logo img {
     width: 45px;
 }
 
-.logo h1 {
+.logo a {
     font-family: 'Varela Round', sans-serif;
     text-decoration: solid;
     font-weight: bold;
     font-size: 2rem;
     text-shadow: 2px 0 0;
+    color: var(--color-5);
 }
 
 .nav {
@@ -112,22 +112,19 @@ html {
 nav ul li {
     display: flex;
     align-items: center;
-    background: transparent;
     list-style-type: none;
-    padding: 0px 10px;
+    padding: 0px 7px;
 }
 
 nav .menu {
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
-    background: transparent;
     color: var(--color-1);
-    padding: 2px 0;
     border-bottom: solid 4px transparent;
     text-decoration: none;
     font-weight: bold;
     position: relative;
-
+    letter-spacing: 1px;
 }
 
 nav .menu.active {
@@ -374,7 +371,9 @@ nav .active a {
     padding: 12px 0;
 }
 
-.card a {
+.btn-card{
+    background-color: transparent;
+    margin: none;
     color: var(--color-1);
     text-decoration: none;
     padding: 5px 10px;
@@ -392,24 +391,38 @@ nav .active a {
 .card:hover {
     border: solid 2px var(--color-1);
 }
-.card a:hover{
+.btn-card:hover{
     border: solid 2px var(--color-4);
     color: #fff;
 }
+.box-modal-project.hide{
+    width: 0px;
+    height: 0px;
+}
 
 .box-modal-project{
-    display: none;
     position: fixed;
-    width: 800px;
+    width: 500px;
     height: 70vh;
     border-radius: 10px;
     top: 0px;
-    left: 0px;
+    left: 200px;
     margin: 25vh auto;
-    background-color: rgba(17, 17, 31, 0.925);
+    background-color: rgba(9, 9, 12, 0.979);
     overflow: hidden;
     box-shadow: 0 0 10px #000;
-    z-index: 100000;
+    transition: 0.3s;
+    z-index: 10;
+}
+.close-box{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.close-box .bx{
+    color: #1d36e9;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 /* ======project===== */

@@ -5,7 +5,7 @@ class menu extends HTMLElement {
             <div class="navbarm">
               <div class="logo">
                 <!--<img src="img/logo.png" alt="logo">-->
-                <h1> CING</h1>
+                <a href = "https://cing1.github.io/">CING</a>
               </div>
               <div class="pad bx bx-menu">
                 <!--<span class="br-1"></span>
@@ -18,11 +18,10 @@ class menu extends HTMLElement {
                 <li><a class="menu" href="https://cing1.github.io/">Inicio</a></li>
                 <li><a class="menu" href="https://cing1.github.io/#services">Servicios</a></li>
                 <li><a class="menu" href="https://cing1.github.io/#projects">Proyectos</a></li>
-                <li><a class="menu" href="https://cing1.github.io/blog.html">Mi blog</a></li>
-                <li><a class="menu" href="https://cing1.github.io/libros.html">Libros</a></li>
-                <li><a class="menu" href="https://cing1.github.io/portfolio/portfolio.html" target="_blank">Portafolio</a></li>
                 <li><a class="menu" href="https://cing1.github.io/#contact">Contacto</a></li>
-                <li><a class="menu" href="https://cing1.github.io/#footer-info">Acerca de</a></li>
+                <li><a class="menu" id="mi-blog" href="https://cing1.github.io/blog.html">Mi blog</a></li>
+                <li><a class="menu" id ="libros" href="https://cing1.github.io/libros.html">Libros</a></li>
+                <li><a class="menu" href="https://cing1.github.io/portfolio/portfolio.html" target="_blank">Portafolio</a></li>
               </ul>
               
               <div class="search-container">
