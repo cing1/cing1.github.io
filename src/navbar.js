@@ -21,7 +21,7 @@ class menu extends HTMLElement {
                 <li><a class="menu" href="https://cing1.github.io/#contact">Contacto</a></li>
                 <li><a class="menu" id="mi-blog" href="https://cing1.github.io/blog.html">Mi blog</a></li>
                 <li><a class="menu" id ="libros" href="https://cing1.github.io/libros.html">Libros</a></li>
-                <li><a class="menu" href="https://cing1.github.io/portfolio/portfolio.html" target="_blank">Portafolio</a></li>
+                <li><a class="menu" href="https://cing1.github.io/portfolio/portfolio.html" target="_blank">Portfolio</a></li>
               </ul>
               
               <div class="search-container">
