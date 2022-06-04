@@ -73,7 +73,7 @@ html {
     justify-content: center;
     box-shadow: 0 0 10px var(--color-1);
     z-index: 99;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .logo {
@@ -113,14 +113,13 @@ nav ul li {
     display: flex;
     align-items: center;
     list-style-type: none;
+    position: relative;
     padding: 0px 7px;
 }
-
-nav .menu {
+nav ul li a{
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
     color: var(--color-1);
-    border-bottom: solid 4px transparent;
     text-decoration: none;
     font-weight: bold;
     position: relative;
@@ -130,6 +129,44 @@ nav .menu {
 nav .menu.active {
     color: var(--color-4);
     border-bottom: solid 4px var(--color-4);
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: var(--color-nav);
+    border-radius: 10px;
+    width: 210px;
+    height: 94px;
+    top: 36px;
+    box-shadow: 0 0 10px #000;
+    border: 1px solid #5e61d5;
+    transition: all 0.3s;
+}
+nav ul li ul::after{
+    display: none;
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #5e61d5;
+    border-top: 5px solid #5e61d5;
+    border-right: 5px solid transparent;
+    transform: rotate(45deg);
+    top: -5px;
+    left: 20px;
+    z-index: 1000;
+}
+nav ul li ul a{
+    margin: 5px 0;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul li:hover > ul::after{
+    display: block;
 }
 
 /* hover border botton */
@@ -144,21 +181,39 @@ nav a::after {
     bottom: -4px;
     transition: all .2s ease-in-out;
 }
-
 nav li:hover a::after {
     width: 100%;
     left: 0;
 }
-
+nav ul li a:hover {
+    color: var(--color-4);
+    transition: .3s;
+}
+/* hover nav child */
+nav li ul a::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 4px;
+    border-bottom: solid 4px var(--color-4);
+    color: var(--color-4);
+    left: 50%;
+    bottom: -4px;
+    transition: all .2s ease-in-out;
+}
+nav li ul li:hover a::after {
+    display: block;
+    width: 100%;
+    left: 0;
+}
 nav ul li a:hover {
     color: var(--color-4);
     transition: .3s;
 }
 
-nav .active a {
-    color: var(--color-4);
-    transition: .3s;
-}
+
+
 
 
 /* =====SEARCH COMPONENT===== */
@@ -219,6 +274,10 @@ nav .active a {
 }
 
 /* =====SEARCH COMPONENT END===== */
+
+
+
+
 
 /* =====END MENU======= */
 
