@@ -55,7 +55,7 @@
     /* navvvv */
     .nav {
         position: absolute;
-        background: var(--color-nav);
+        background: var(--color-nav-bg);
         width: 100%;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
