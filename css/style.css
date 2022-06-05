@@ -474,12 +474,14 @@ nav ul li a:hover {
 .card {
     height: 330px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 12px;
     box-shadow: 0 0 10px var(--color-shadow);
     background-color: rgba(0, 0, 0, 0.03);
     border: solid 2px var(--color-card-border);
-    margin: auto;
+    overflow: hidden;
+    /* margin: auto; */
     transition: border .5s;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
 
 .card .card-title {
@@ -508,16 +510,23 @@ nav ul li a:hover {
     transform: translate(10px, 10px);
     border-radius: 50vh;
     border: solid 2px var(--color-3);
-    transition: all 1s;
+    transition: all 0.3s;
 }
 .card img {
     width: 100%;
+    /* display: flex; */
     height: 70%;
-    border-top-right-radius: 18px;
-    border-top-left-radius: 18px;
+    /* text-align: center; */
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    justify-content: center;
 }
 .card:hover {
+    position: relative;
     border: solid 2px var(--color-2);
+    background-color: rgba(255, 255, 255, 0.01);
+    transform: scale(1.2);
+    /* height: 500px; */
 }
 .btn-card:hover{
     border: solid 2px var(--color-4);
