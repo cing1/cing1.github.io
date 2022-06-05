@@ -1,0 +1,45 @@
+#programs-hp-prime{
+    height: auto;
+    width: 100%;
+    background-color: var(--color-bg);
+    padding-top: 40px;
+}
+.hp-prime-container{
+    height: 5700px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #aaa;
+    overflow: hidden;
+}
+iframe{
+    background-color: #020216;
+    color: #fff;
+}
+.descargar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+#programs-hp-prime a{
+    margin: auto;
+    padding: 8px 10px;
+    border-radius: 50vh;
+    border: 2px solid var(--color-3);
+    color: var(--color-4);
+    text-decoration: none;
+}
+#programs-hp-prime a:hover{
+    border: 2px solid var(--color-1);
+}
+
+#nav .menu.active{
+    color: var(--color-nav)!important;
+}
+#nav #recursos{
+    color: var(--color-nav-hover)
+}
+#nav li ul li #hp-prime{
+    color: var(--color-nav-hover)!important;
+}

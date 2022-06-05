@@ -21,9 +21,9 @@ class menubar extends HTMLElement {
           <li>
             <a class='menu' id='recursos' href="#">Recursos</a>
             <ul>
-              <li><a href="https://cing1.github.io/biblioteca.html">Biblioteca</a></li>
+              <li><a id="biblioteca" href="https://cing1.github.io/biblioteca.html">Biblioteca</a></li>
               <li><a href="https://cing1.github.io/plantillas-excel.html">Plantillas Excel</a></li>
-              <li><a href="https://cing1.github.io/programas-hp-prime">Programas HP-PRIME</a></li>
+              <li><a id="hp-prime" href="https://cing1.github.io/programas-hp-prime">Programas HP-PRIME</a></li>
             </ul>
           </li>
         </ul>

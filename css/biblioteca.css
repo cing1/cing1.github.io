@@ -331,6 +331,11 @@
 nav li #recursos{
     color: var(--color-6)!important;
 }
+
+#nav li ul li #biblioteca{
+    color: var(--color-nav-hover)!important;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 800px) {
