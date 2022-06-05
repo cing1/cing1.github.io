@@ -1,4 +1,4 @@
-class menu extends HTMLElement {
+class menubar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <nav class="navbar">
@@ -12,14 +12,14 @@ class menu extends HTMLElement {
       </div>
       <div class="nav nav-menu-visible">
         <ul id="nav" class="navbarli">
-          <li><a class="menu" href="https://cing1.github.io/">Inicio</a></li>
+          <li><a class="menu active" href="https://cing1.github.io/">Inicio</a></li>
           <li><a class="menu" href="https://cing1.github.io/#services">Servicios</a></li>
           <li><a class="menu" href="https://cing1.github.io/#projects">Proyectos</a></li>
           <li><a class="menu" href="https://cing1.github.io/#contact">Contacto</a></li>
           <li><a class="menu" id="mi-blog" href="https://cing1.github.io/blog.html">Mi blog</a></li>
           <li><a class="menu" href="https://cing1.github.io/portfolio/portfolio.html" target="_blank">Portfolio</a></li>
           <li>
-            <a href="#">Recursos</a>
+            <a class='menu' id='recursos' href="#">Recursos</a>
             <ul>
               <li><a href="https://cing1.github.io/biblioteca.html">Biblioteca</a></li>
               <li><a href="https://cing1.github.io/plantillas-excel.html">Plantillas Excel</a></li>
@@ -46,4 +46,4 @@ class menu extends HTMLElement {
   }
 }
 
-window.customElements.define("nav-bar", menu);
+window.customElements.define("nav-bar", menubar);

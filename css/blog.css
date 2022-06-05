@@ -1,8 +1,11 @@
 /* esto es un prueba par agit */
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 /* blogs */
+#nav li .menu.active{
+    color: var(--color-nav);
+}
 #mi-blog{
-    color: var(--color-4)!important;
+    color: var(--color-6)!important;
 }
 #blog {
     height: auto;

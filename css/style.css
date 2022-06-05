@@ -7,11 +7,16 @@
     --color-3: #001aff;
     --color-4: #ff00a5;
     --color-5: #ff5e00;
-    --color-input: #fa1185d0;
-    --color-nav: #11002e;
-    --color-nav-movile: #24045c;
+    --color-6: #ffff00;
     --color-bg: #0b0b24;
-    --color-shadow: #5e61d5;
+    --color-nav-bg: #11002e;
+    --color-nav: #00eeff;
+    --color-nav-hover: #fbff00;
+    --color-nav-after-hover: #ff5e00;
+    --color-input: #fcd6e9d0;
+    --color-nav-movile: #24045c;
+    --color-card-border: #666;
+    --color-shadow: #000000;
     --color-footer: #04040c;
     --breakpoint-extra-large: 1100px;
 }
@@ -66,7 +71,7 @@ html {
     display: flex;
     height: 40px;
     width: calc(100% - 5px);
-    background-color: var(--color-nav);
+    background-color: var(--color-nav-bg);
     border: solid 2px var(--color-1);
     border-radius: 50vh;
     margin: 3px 5px;
@@ -119,22 +124,21 @@ nav ul li {
 nav ul li a{
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
-    color: var(--color-1);
+    color: var(--color-nav);
     text-decoration: none;
     font-weight: bold;
     position: relative;
     letter-spacing: 1px;
 }
 
-nav .menu.active {
-    color: var(--color-4);
-    border-bottom: solid 4px var(--color-4);
+#nav li .menu.active{
+    color: var(--color-nav-hover);
 }
 
 nav ul li ul{
     display: none;
     position: absolute;
-    background-color: var(--color-nav);
+    background-color: var(--color-nav-bg);
     border-radius: 10px;
     width: 210px;
     height: 94px;
@@ -175,8 +179,8 @@ nav a::after {
     content: "";
     width: 0%;
     height: 4px;
-    border-bottom: solid 4px var(--color-4);
-    color: var(--color-4);
+    border-bottom: solid 4px var(--color-nav-after-hover);
+    color: var(--color-5);
     left: 50%;
     bottom: -4px;
     transition: all .2s ease-in-out;
@@ -196,7 +200,7 @@ nav li ul a::after {
     content: "";
     width: 0%;
     height: 4px;
-    border-bottom: solid 4px var(--color-4);
+    border-bottom: solid 4px var(--color-nav-after-hover);
     color: var(--color-4);
     left: 50%;
     bottom: -4px;
@@ -208,7 +212,7 @@ nav li ul li:hover a::after {
     left: 0;
 }
 nav ul li a:hover {
-    color: var(--color-4);
+    color: var(--color-nav-hover);
     transition: .3s;
 }
 
@@ -473,7 +477,7 @@ nav ul li a:hover {
     border-radius: 20px;
     box-shadow: 0 0 10px var(--color-shadow);
     background-color: rgba(0, 0, 0, 0.03);
-    border: solid 2px #1d36e9;
+    border: solid 2px var(--color-card-border);
     margin: auto;
     transition: border .5s;
 }
@@ -513,7 +517,7 @@ nav ul li a:hover {
     border-top-left-radius: 18px;
 }
 .card:hover {
-    border: solid 2px var(--color-1);
+    border: solid 2px var(--color-2);
 }
 .btn-card:hover{
     border: solid 2px var(--color-4);
@@ -590,7 +594,7 @@ nav ul li a:hover {
     height: 200px;
     width: 186px;
     border-radius: 15px;
-    border: 2px solid rgba(59, 59, 59, 0.493);
+    border: 2px solid var(--color-card-border);
 }
 
 .contact-card a {
