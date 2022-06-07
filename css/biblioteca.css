@@ -40,7 +40,7 @@
     position: relative;
     top: 0px;
     /* width: 280px; */
-    height: 350px;
+    height: 380px;
     border-radius: 10px;
     border: solid 2px var(--color-card-border);
     background-color: rgba(3, 0, 14, 0.856);
