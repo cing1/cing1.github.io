@@ -4,13 +4,28 @@
 }
 #library-section {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: var(--color-bg);
-    padding-top: 50px;
+    padding-top: 120px;
+}
+.nav-menu-bar-lib{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background: var(--color-bg);
+    box-shadow: 0 5px 10px;
+    z-index: 2;
+}
+.head{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    padding: 5px 0;
 }
 
-.head .titulo h1 {
-    padding: 0 20px;
+.head .title h1 {
+    color: var(--color-1);
+    padding: 5px 20px;
     font-size: 18px;
 }
 
@@ -39,7 +54,6 @@
 .libList {
     position: relative;
     top: 0px;
-    /* width: 280px; */
     height: 380px;
     border-radius: 10px;
     border: solid 2px var(--color-card-border);
@@ -47,7 +61,7 @@
     padding: 5px;
     transition: all 0.3s;
     overflow: hidden;
-    z-index: 10;
+    z-index: 1;
 }
 
 
@@ -130,19 +144,11 @@
 
 
 .library-container {
-    /* width: calc(100% - 240px); */
-    /* width: 100%; */
     max-width: 1200px;
-    height: calc(100vh - 105px);
+    height: auto;
     border-radius: 10px;
-    border: solid 2px #0ff;
     margin: 0px auto;
     padding: 2px 0;
-    /* margin-left: 10px; */
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 30px;
 }
 
 .content-title {
@@ -151,7 +157,6 @@
     width: 100%;
     height: auto;
     align-content: center;
-    z-index: 100;
 
 }
 
@@ -194,7 +199,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px 0;
+    gap: 20px 5px;
     padding: 20px 0;
 
 }
