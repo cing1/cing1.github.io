@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/hp-prime.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
     <script src="src/navbar.js"></script>
     <script src="src/footer-copyrigth.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -148,7 +148,16 @@
     <footer id="footer-info">
         <footer-copyrigth></footer-copyrigth>
     </footer>
-    <script src="js/main.js"></script>
+    <script>
+        // menu hide-visible in responsive
+        const navMenu = document.querySelector('.nav');
+        const padToggle = document.querySelector('.pad');
+        padToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('nav-menu-visible');
+        padToggle.classList.toggle('bx-x');
+        });
+    </script>
+    <!-- <script src="js/main.js"></script> -->
     <script src="src/navbar.js"></script>
     <script src="src/footer-copyrigth.js"></script>
 </body>

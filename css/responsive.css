@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1140px) {
+    .pad.pad.bx.bx-menu{
+        bottom: 0.2px;
+    }
     nav ul li a {
         font-size: 14px;
     }
@@ -23,7 +26,6 @@
     .navbarm {
         display: flex;
         width: 100%;
-
         height: 40px;
     }
 
@@ -39,7 +41,6 @@
     .pad.bx.bx-menu {
         display: block;
     }
-
     .pad {
         display: block;
         cursor: pointer;
