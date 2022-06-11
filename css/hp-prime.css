@@ -49,7 +49,7 @@ iframe{
 
 
 .hp-file-card{
-    width: 250px;
+    width: 200px;
     height: 230px;
     border: 1px solid rgba(170, 170, 170, 0.342);
     border-radius: 10px;
@@ -72,6 +72,7 @@ iframe{
     height: 20%;
     margin: auto;
     align-items: center;
+    justify-content: space-between;
 }
 .file-name p{
     color: rgb(4, 0, 250);
@@ -92,3 +93,14 @@ font-size: 25px;
     font-size: 25px;
     color: rgb(0, 195, 255);
     }
+@media only screen and (max-width: 800px) {
+    .hp-prime-container{
+        width: 100%;
+        padding: 0 5px;
+    }
+    .hp-file-card{
+        width: 170px;
+        overflow: hidden;
+    }
+    
+}

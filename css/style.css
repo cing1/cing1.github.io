@@ -447,8 +447,7 @@ nav ul li a:hover {
 
 .titulo h1 {
     font-family: 'Varela Round';
-    padding: 20px 0;
-    /* padding-bottom: 0; */
+    padding: 20px 10px;
     color: #00ffc8;
     font-size: 2rem;
     font-weight: bolder;
