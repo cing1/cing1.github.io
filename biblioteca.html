@@ -20,7 +20,6 @@
 </head>
 
 <body>
-  <!-- <div id="preloader"></div> -->
   <header class="nav-menu-bar-lib">
     <nav-bar></nav-bar>
     <div class="head">
@@ -295,10 +294,19 @@
   </section>
 
   <footer>
-    <!-- <footer-copyrigth></footer-copyrigth> -->
+    <footer-copyrigth></footer-copyrigth>
   </footer>
 
+
   <script>
+    // menu hide-visible in responsive
+    const navMenu = document.querySelector('.nav');
+    const padToggle = document.querySelector('.pad');
+    padToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('nav-menu-visible');
+        padToggle.classList.toggle('bx-x');
+    });
+
     const cardFiles = document.querySelectorAll('.fileCard')
     const numFiles = cardFiles.length;
     const adText = document.getElementById('num-text');
@@ -318,8 +326,6 @@
       gridViewBtn.classList.remove("active-btn");
       itemList.classList.add("listActive");
     });
-
-
 
     const comboBox = document.querySelector('.combo-title')
     const hideContent = document.querySelector('.libList');
