@@ -1,4 +1,6 @@
-
+html{
+    scroll-padding: 150px;
+}
 #nav li .menu.active{
     color: var(--color-nav);
 }
