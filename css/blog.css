@@ -51,11 +51,12 @@
 .blog-card img {
     width: 300px;
     border-radius: 12px;
-
 }
 
-.blogs .prev {
+.blogs .blog-title {
+    /* display: block; */
     padding: 20px;
+    /* right: 0px; */
 }
 
 .blogs a {
