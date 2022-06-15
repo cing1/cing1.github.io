@@ -11,12 +11,12 @@ ScrollReveal().reveal('.titulo', {
     delay: 200,
     origin: 'left'
 });
-ScrollReveal().reveal('.card', {
+ScrollReveal().reveal('.card-services', {
     delay: 100,
     origin: 'bottom',
     interval: 100
 });
-ScrollReveal().reveal('.proj-card', {
+ScrollReveal().reveal('.card-proj', {
     delay: 100,
     origin: 'bottom',
     interval: 100
