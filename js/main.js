@@ -42,8 +42,13 @@ ScrollReveal().reveal('.home-text', {
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
     loader.style.display = "none";
-})
-
+});
+function darkMode(){
+    const getDark = document.querySelector('.dark-modei')
+    console.log(getDark);
+    getDark.classList.toggle('bxs-sun')
+    
+}
 // menu hide-visible in responsive
 const navMenu = document.querySelector('.nav');
 const padToggle = document.querySelector('.pad');

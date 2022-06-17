@@ -74,6 +74,19 @@ html {
 
 }
 
+.dark-mode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-5);
+    border-radius: 50vh;
+    height: 27px;
+    width: 27px;
+    font-size: 17px;
+}
+.dark-mode:hover{
+    cursor: pointer;
+}
 
 /* ===MENU==== */
 .navbar {

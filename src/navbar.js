@@ -33,6 +33,7 @@ class menubar extends HTMLElement {
           <a href="https://www.twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
           <a href="https://www.instagram.com" target="_blank"><i class="bx bxl-instagram"></i></a>
           <a href="https://www.linkedin.com" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <button type="submit" class="dark-mode" onclick="darkMode()"><i class="dark-modei bx bxs-moon"></i></button>
           <div class="search">
              <input type="text" class="searchTerm" placeholder="Buscar">
              <button type="submit" class="searchButton">
