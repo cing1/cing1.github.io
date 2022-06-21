@@ -1,0 +1,49 @@
+:root {
+    --color-1l: #0ff;
+    --color-2l: #6993fd;
+    --color-3l: #001aff;
+    --color-4l: #ff00a5;
+    --color-5l: #ff5e00;
+    --color-6l: #ffff00;
+    --color-bgl: #bfbfff;
+    --color-nav-bgl: #74aafc;
+    --color-navl: #070aaf;
+    --color-nav-hoverl: #0d0022;
+    --color-nav-after-hoverl: #ff5e00;
+    --color-inputl: #fcd6e9d0;
+    --color-nav-movilel: #24045c;
+    --color-card: rgb(224, 238, 253);
+    --color-card-borderl: #666;
+    --color-shadowl: #000000;
+    --color-footerl: #2a3346;
+}
+.darkMode .navbar{
+    background-color: var(--color-nav-bgl);
+    border: solid 2px var(--color-1l);
+    box-shadow: 0 0 10px var(--1color-1l);
+}
+.darkMode nav ul li a{
+    color: var(--color-navl);
+}
+.darkMode nav li ul {
+    background-color: var(--color-nav-bgl);
+}
+.darkMode #services, .darkMode #projects, .darkMode #contact{
+    background-color: var(--color-bgl);
+}
+.darkMode footer-copyrigth{
+    background-color: var(--color-footerl);
+}
+.darkMode .card-services{
+    background-color: var(--color-card);
+}
+.darkMode .contact-card{
+    background-color: var(--color-card);
+}
+.darkMode #nav li .menu.active{
+    color: var(--color-nav-hoverl);
+}
+.darkMode .titulo h2{
+    color: #24045c;
+
+}

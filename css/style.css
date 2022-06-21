@@ -79,6 +79,7 @@ html {
     align-items: center;
     justify-content: center;
     background-color: var(--color-5);
+    border: 2px solid #00eeff;
     border-radius: 50vh;
     height: 27px;
     width: 27px;
@@ -101,6 +102,7 @@ html {
     justify-content: center;
     box-shadow: 0 0 10px var(--color-1);
     z-index: 5;
+    transition: all ease-in 0.2s;
 }
 
 .logo {
@@ -342,7 +344,7 @@ nav ul li a:hover {
 .btn-float:hover {
     width: 70px;
     height: 70px;
-    background-color: #ffffff;
+    background-color: #008b2e;
 }
 
 /* mouse indicator */
@@ -482,6 +484,7 @@ nav ul li a:hover {
     padding: 0px 20px;
     padding-bottom: 20px;
     background: var(--color-bg);
+    transition: all ease-in 0.2s;
 }
 
 #services .services {
@@ -557,6 +560,7 @@ nav ul li a:hover {
     padding: 0 20px;
     padding-bottom: 20px;
     justify-content: center;
+    transition: all ease-in 0.2s;
 }
 
 #projects .projects {
@@ -576,6 +580,7 @@ nav ul li a:hover {
     border-radius: 10px;
     border: 2px solid #aaa;
     overflow: hidden;
+    transition: all ease-in 0.2s;
 }
 .card-proj:hover{
     position: relative;
@@ -791,6 +796,7 @@ nav ul li a:hover {
 #contact {
     background-color: rgb(15, 15, 51);
     padding: 0 20px;
+    transition: all ease-in 0.2s;
 }
 
 .contact-container {
@@ -811,6 +817,7 @@ nav ul li a:hover {
     width: 186px;
     border-radius: 15px;
     border: 2px solid var(--color-card-border);
+    transition: all ease-in 0.2s;
 }
 
 .contact-card a {

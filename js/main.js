@@ -44,10 +44,11 @@ window.addEventListener("load", function () {
     loader.style.display = "none";
 });
 function darkMode(){
-    const getDark = document.querySelector('.dark-modei')
+    const getDark = document.querySelector('.dark-modei');
+    const darkMode = document.querySelector('body');
+    getDark.classList.toggle('bxs-sun');
     console.log(getDark);
-    getDark.classList.toggle('bxs-sun')
-    
+    darkMode.classList.toggle('darkMode');
 }
 // menu hide-visible in responsive
 const navMenu = document.querySelector('.nav');
