@@ -27,7 +27,6 @@ class menubar extends HTMLElement {
             </ul>
           </li>
         </ul>
-        
         <div class="search-container">
           <a href="https://www.facebook.com/cing.ingenieria" target="_blank"> <i class="bx bxl-facebook"></i></a>
           <a href="https://www.twitter.com" target="_blank"><i class="bx bxl-twitter"></i></a>
@@ -42,8 +41,7 @@ class menubar extends HTMLElement {
           </div>
         </div>
       </div>
-    </nav>
-        `;
+    </nav>`;
   }
 }
 
