@@ -1033,19 +1033,7 @@ footer span {
     top: -400px;
     left: -400px;
     background: radial-gradient(circle, rgba(255, 0, 212, 0.144) 0%, rgba(0, 213, 255, 0) 70%);
-    /* -webkit-animation: 5s ease infinite animspan1; */
-    /* -moz-animation: 5s ease infinite animspan1; */
-    animation: linear animspan1;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-}
-@keyframes animspan1 {
-    from {
-        background: radial-gradient(circle, rgba(255, 0, 212, 0.144) 0%, rgba(0, 213, 255, 0) 70%);
-    }
-    to {
-        background: radial-gradient(circle,rgba(0, 4, 255, 0.144) 0%, rgba(0, 213, 255, 0) 70%);
-    }
+    z-index: 1;
 }
 
 .span2{
@@ -1055,4 +1043,5 @@ footer span {
     bottom: -400px;
     right: -400px;
     background: radial-gradient(circle, rgba(0, 247, 255, 0.185) 0%, rgba(0, 213, 255, 0) 70%);
+    z-index: 1;
 }
