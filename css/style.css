@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
+@import url(../assets/boxicons.min.css);
 :root {
     --color-1: #0ff;
     --color-2: #6993fd;
@@ -328,7 +328,7 @@ nav ul li a:hover {
     border-top-left-radius: 50vh;
     border-bottom-left-radius: 50vh;
     border-bottom-right-radius: 50vh;
-    background-color: #00ff2a;
+    background-color: #00ff15;
     align-items: center;
     justify-content: center;
     cursor: pointer;

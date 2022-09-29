@@ -804,7 +804,7 @@ display: flex;
     padding-top: 4px;
 }
 .contact .php-email-form {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     background: linear-gradient(45deg, rgba(0,255,145,.8) 0%, rgba(0,146,255,.8) 54%, rgba(253,48,255,.8) 100%);
     border: 2px solid var(--color-primary);
@@ -813,7 +813,7 @@ display: flex;
 }
 
 .contact .php-email-form .form-group {
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
 }
 
 .contact .php-email-form .validate {
@@ -872,7 +872,7 @@ display: flex;
 }
 
 .contact .php-email-form input {
-    height: 44px;
+    /* height: 44px; */
 }
 
 .contact .php-email-form textarea {
