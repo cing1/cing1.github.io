@@ -47,7 +47,6 @@ function darkMode(){
     const getDark = document.querySelector('.dark-modei');
     const darkMode = document.querySelector('body');
     getDark.classList.toggle('bxs-sun');
-    console.log(getDark);
     darkMode.classList.toggle('darkMode');
 }
 // menu hide-visible in responsive
