@@ -25,6 +25,9 @@
     padding-bottom: 80px;
     justify-content: center;
 }
+#blog .titulo {
+    max-width: 800px;
+}
 .blogs {
     display: flex;
     flex-direction: column;
@@ -38,43 +41,51 @@
 .blog-card {
     display: flex;
     width: 100%;
-    height: 200px;
-    max-width: var(--breakpoint-extra-large);
-    padding: 2px 2px;
+    /* height: 200px; */
+    max-width: 800px;
+    padding: 10px 10px;
     border-radius: 12px;
-    box-shadow: 0 0 12px #000;
-    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 2px 2px 5px #000;
+    background-image: linear-gradient(114.67deg, rgba(62, 60, 82, 0.5) 5%, rgba(62, 60, 82, 0.1) 75%);
 }
 
 
 
 .blog-card img {
-    width: 300px;
+    width: 280px;
     border-radius: 12px;
 }
 
 .blogs .blog-title {
-    /* display: block; */
     padding: 20px;
-    /* right: 0px; */
 }
 
 .blogs a {
-    color: var(--color-2);
-    ;
+    color: var(--color-3);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5rem;
     /* height: 67px; */
 }
-
+.blogs a:hover {
+    color: #f7f7f7;
+}
+.blogs h2 {
+    color: #9dbbc8;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: system-ui;
+    padding: 3px;
+}
 .blogs h3 {
     display: block;
     color: #03a9f4;
     font-size: 0.8rem;
     font-weight: 300;
     font-family: system-ui;
-    /* margin-bottom: 10px; */
+    bottom: 0px;
 }
+
+
 
 @media only screen and (max-width: 540px) {
     #blog {

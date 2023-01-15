@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../img/ico/icon.png" rel="icon" type="image/png">
+  <title>CING | Blogs</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../css/blogs.css">
+  <link href="../assets/boxicons.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <script src="../js/main.js/"></script>
+  <script src="../src/navbar.js"></script>
+  <script src="../src/footer-copyrigth.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZZGM99SKG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+  
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+  
+      gtag('config', 'G-0ZZGM99SKG');
+    </script>
+</head>
+
+<body>
+  <header>
+    <h2>Calculadora de secciones de acero de construcción</h2>
+  </header>
+  <div class="calc-secction">
+    <h1>CALCULADORA DE SECCIONES DE ACERO DE CONSTRUCCIÓN</h1>
+    <table>
+      <tr>
+        <th>Diámetro #</th>
+        <th>Diámetro [Pulg]</th>
+        <th>Diámetro [mm]</th>
+        <th>Sección [cm2]</th>
+        <th>Peso [kg/m]</th>
+        <th>Cantidad</th>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1/4</td>
+        <td>6.4</td>
+        <td id="a2">0.317</td>
+        <td>0.249</td>
+        <td><input type="number" id="N2" value="0" /></td>
+      </tr>
+      <tr>
+        <td>2.5</td>
+        <td>5/16</td>
+        <td>7.9</td>
+        <td id="a2">0.490</td>
+        <td>0.388</td>
+        <td><input type="number" id="N25" value="0" /></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3/8</td>
+        <td>9.5</td>
+        <td id="a3">0.713</td>
+        <td>0.559</td>
+        <td><input type="number" id="N3" value="0" /></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>1/2</td>
+        <td>12.7</td>
+        <td id="a4">1.267</td>
+        <td>0.994</td>
+        <td><input type="number" id="N4" value="0" /></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>5/8</td>
+        <td>15.9</td>
+        <td id="a5">1.979</td>
+        <td>1.554</td>
+        <td><input type="number" id="N5" value="0" /></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>3/4</td>
+        <td>19.1</td>
+        <td id="a6">2.850</td>
+        <td>2.237</td>
+        <td><input type="number" id="N6" value="0" /></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>7/8</td>
+        <td>22.2</td>
+        <td id="a7">3.879</td>
+        <td>3.045</td>
+        <td><input type="number" id="N7" value="0" /></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>1</td>
+        <td>25.4</td>
+        <td id="a8">5.067</td>
+        <td>3.978</td>
+        <td><input type="number" id="N8" value="0" /></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>1 1/8</td>
+        <td>28.6</td>
+        <td id="a9">6.413</td>
+        <td>5.034</td>
+        <td><input type="number" id="N9" value="0" /></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>1 1/4</td>
+        <td>31.8</td>
+        <td id="a10">7.917</td>
+        <td>6.215</td>
+        <td><input type="number" id="N10" value="0" /></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>1 3/8</td>
+        <td>34.9</td>
+        <td id="a11">9.580</td>
+        <td>7.520</td>
+        <td><input type="number" id="N11" value="0" /></td>
+      </tr>
+    </table>
+    <div class="ansbox">    
+        <button onclick="btnans()">Calcular</button>
+        <p id="pans"></p>
+    </div>
+  </div>
+
+  <footer>
+    <footer-copyrigth></footer-copyrigth>
+  </footer>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    width: 100%;
+    background-color: #080816;
+}
+h1 {
+    font-size: 1rem;
+}
+
+header {
+    width: 800px;
+    padding-top: 5vh;
+    padding-bottom: 40px;
+    margin: auto;
+    text-align: center;
+}
+
+.calc-secction {
+    width: 630px;
+    margin: auto;
+    text-align: center;
+    background-color: #111;
+    border: solid 2px rgb(51, 50, 50);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+table, th, td {
+    border: solid 2px rgb(179, 172, 172);
+    border-collapse: collapse;
+    margin: 10px 0px;
+}
+th {
+    background: #115;
+    padding: 8px 5px;
+}
+td {
+    padding: 2px 0px;
+    background: #14d4ff17;
+}
+
+input {
+    width: 80px;
+    background: rgb(216, 254, 255);
+    color: #000;
+}
+button {
+    height: 30px;
+    width: 80px;
+    background: rgb(42, 91, 224);
+    border: solid 2px #115;
+    border-radius: 50vh;
+}
+button:hover {
+    background: rgb(38, 0, 253);
+}
+
+.ansbox {
+    display: flex;
+    justify-content: space-around;
+}
+.ansbox p {
+    color: red;
+}
+  </style>
+  <script>
+    function btnans() {
+      var ans =
+        (parseFloat(document.getElementById("N2").value) * 0.317) + 
+        (parseFloat(document.getElementById("N25").value) * 0.490) + 
+        (parseFloat(document.getElementById("N3").value) * 0.713) + 
+        (parseFloat(document.getElementById("N4").value) * 1.267) + 
+        (parseFloat(document.getElementById("N5").value) * 1.979) + 
+        (parseFloat(document.getElementById("N6").value) * 2.850) + 
+        (parseFloat(document.getElementById("N7").value) * 3.879) + 
+        (parseFloat(document.getElementById("N8").value) * 5.067) + 
+        (parseFloat(document.getElementById("N9").value) * 6.413) + 
+        (parseFloat(document.getElementById("N10").value) * 7.917) +
+        (parseFloat(document.getElementById("N11").value) * 9.580);
+      console.log(ans);
+      document.getElementById("pans").innerHTML = "" + ans.toFixed(4) + "  cm^2";
+    }
+  </script>
+
+  <script src="../js/main.js"></script>
+  <script src="../src/footer-copyrigth.js"></script>
+  <script src="../src/navbar.js"></script>
+</body>
+
+</html>

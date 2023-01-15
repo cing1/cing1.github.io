@@ -18,7 +18,7 @@
     --color-card-border: #666;
     --color-shadow: #000000;
     --color-footer: #04040c;
-    --breakpoint-extra-large: 1100px;
+    --breakpoint-extra-large: 992px;
 }
 
 /* scroll bar */
@@ -102,7 +102,7 @@ html {
     justify-content: center;
     box-shadow: 0 0 10px var(--color-1);
     backdrop-filter: blur(5px);
-    z-index: 12;
+    z-index: 20;
     transition: all ease-in 0.2s;
 }
 
@@ -531,11 +531,15 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 .card-title{
+    position: relative;
+    top: -20px;
     width: 100%;
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient( rgba(0, 221, 255, 0) 0%,rgb(5, 4, 24) 20%);
     align-items: center;
+    justify-content: center;
 }
 .card-title h3{
     font-family: 'Varela Round', sans-serif;
@@ -551,36 +555,41 @@ nav ul li a:hover {
     height: auto;
     background-color: var(--color-bg);
     padding: 0 20px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     justify-content: center;
     transition: all ease-in 0.2s;
     overflow: hidden;
 }
 
 #projects .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+    grid-gap: 28px;
     max-width: var(--breakpoint-extra-large);
-    justify-content: space-around;
+    /* justify-content: space-around; */
     height: auto;
     margin: auto;
 }
 
 .card-proj{
     width: 320px;
-    height: 230px;
     border-radius: 10px;
     transition: all ease-in 0.2s;
+    border: solid 1px #aaa;
+    overflow: hidden;
     z-index: 10;
 }
 .card-proj:hover{
-    box-shadow: 0 0 14px #00eeff9d;
+    position: relative;
+    border: solid 1px #000;
+    box-shadow: 5px 5px 10px #000000;
+    background-color: var(--color-bg);
+    transform: scale(1.2);
+    z-index: 12;
 }
 .card-proj .image-cover{
     height: 200px;
     background-color: #000;
-    border-radius: 10px;
     overflow: hidden;
     text-align: center;
 }
@@ -589,113 +598,48 @@ nav ul li a:hover {
     height: 200px;
 
 }
-
-.card-proj .card-titlep{
+.card-proj-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: var(--color-2);
+}
+.card-footer1 img {
+    height: 15px;
+}
+.card-proj .card-footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    position: absolute;
     bottom: 0px;
 }
 
-.card-proj .card-titlep h3{
+.card-proj .card-footer1 h3{
     font-family: 'Sourse Sans Pro', sans-serif;
     font-size: 15px;
     padding: 5px 0;
-    color: #fff;
     text-align: center;
 }
 
-
-.hover-effect .btn-card{
-    position: relative;
-    display: none;
-    padding: 10px 20px;
-    border-radius: 50vh;
+.card-proj .btn-card{
+    height: 30px;
+    padding: 5px 5px;
     background-color: rgba(3, 4, 83, 0.363);
-    border: 1px solid #000;
     color: var(--color-1);
     cursor: pointer;
-    overflow: hidden;
-    display: inline-block;
     border: 1px solid #4f4f4f;
-    border-radius: 50vh;
-    transition: all 0.2s ease-in;
-    position: relative;
-    overflow: hidden;
+    border-radius: 5px;
+    font-size: 1.2rem;
     z-index: 1;
 
 }
 
-
-.btn-card:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.25);
-    top: 100%;
-    width: 140%;
-    height: 180%;
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-   }
-   
-   .btn-card:after {
-    content: "";
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%) scaleY(1) scaleX(1.45);
-    top: 180%;
-    width: 160%;
-    height: 190%;
-    background-color: #39bda7;
-    border-radius: 50%;
-    display: block;
-    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-    z-index: -1;
-   }
-   
-   .btn-card:hover {
-    color: #ffffff;
-    border: 1px solid #39bda7;
-   }
-   
-   .btn-card:hover:before {
-    top: -35%;
-    background-color: #39bda7;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-   }
-   
-   .btn-card:hover:after {
-    top: -45%;
-    background-color: #39bda7;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-   }
-
-
-
-
-
-.hover-effect{
-    position: absolute;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    /* background-color: rgba(0, 0, 0, 0); */
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: all 0.3s;
+.card-proj .btn-card:hover {
+    background-color: #444;
 }
-/* .card-proj:hover > .hover-effect{
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.507);
-} */
-/* .hover-effect:hover > .btn-card{
-    display: block;
-} */
 
 
 /* box modal */
@@ -705,9 +649,9 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: 90%;
     left: 0px;
+    bottom: 0px;
     background-color: rgba(0, 0, 0, 0.897);
     z-index: 10;
 }
@@ -716,8 +660,8 @@ nav ul li a:hover {
 }
 .box-modal-project{
     position: relative;
-    /* width: auto; */
-    height: 80%;
+    bottom: 0px;
+    height: 100%;
     border-radius: 10px;
     background-color: rgba(98, 98, 102, 0.87);
     box-shadow: 0 0 10px #000;
@@ -731,8 +675,8 @@ nav ul li a:hover {
 }
 .close-box{
     position: absolute;
-    top: -30px;
-    right: -30px;
+    top: -0px;
+    right: -35px;
     display: flex;
     justify-content: right;
     border-radius: 50vh;
@@ -845,7 +789,7 @@ nav ul li a:hover {
     to {opacity: 1}
   }
 
-/* ==================================== */
+/* ================CONTACTOS==================== */
 
 
 #contact {
@@ -872,15 +816,21 @@ nav ul li a:hover {
     width: 186px;
     border-radius: 15px;
     border: 2px solid var(--color-card-border);
-    transition: all ease-in 0.2s;
+    transition: all ease-in 0.5s;
 }
-
+.contact-card:hover {
+    background-image: radial-gradient(rgba(167, 6, 253, 0.24) 10%, rgba(0, 0, 255, 0.026) 80%);
+}
 .contact-card a {
     font-size: 60px;
     color: var(--color-3);
     margin-bottom: 25px;
+    transition: all ease-in 0.5s;
 }
-
+.contact-card a:hover {
+    position: relative;
+    top: -6px;
+}
 .contact-card h2 {
     font-size: 18px;
     color: #6b6baa;
