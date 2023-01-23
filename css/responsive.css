@@ -158,7 +158,14 @@
         margin: auto;
         align-items: center;
     }
-
+    /* ====== card services=========== */
+    #services .services {
+        gap: 40px;
+    }
+/* ======= card projects */
+#projects .projects {
+    gap: 40px;
+}
     footer-copyrigth {
         height: 60px;
     }

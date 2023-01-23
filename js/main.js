@@ -16,11 +16,11 @@ ScrollReveal().reveal('.card-services', {
     origin: 'bottom',
     interval: 100
 });
-// ScrollReveal().reveal('.card-proj', {
-//     delay: 100,
-//     origin: 'bottom',
-//     interval: 100
-// });
+ScrollReveal().reveal('.card-proj', {
+    delay: 100,
+    origin: 'bottom',
+    interval:  100
+});
 ScrollReveal().reveal('.blog-card', {
     delay: 100,
     origin: 'bottom',
