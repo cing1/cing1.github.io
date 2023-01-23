@@ -7,10 +7,10 @@ ScrollReveal({
     duration: 1500,
     delay: 100
 });
-ScrollReveal().reveal('.titulo', {
-    delay: 200,
-    origin: 'left'
-});
+// ScrollReveal().reveal('.titulo', {
+//     delay: 200,
+//     origin: 'left'
+// });
 ScrollReveal().reveal('.card-services', {
     delay: 100,
     origin: 'bottom',
@@ -26,11 +26,11 @@ ScrollReveal().reveal('.blog-card', {
     origin: 'bottom',
     interval: 100
 });
-ScrollReveal().reveal('.contact-card', {
-    delay: 100,
-    origin: 'left',
-    interval: 100
-});
+// ScrollReveal().reveal('.contact-card', {
+//     delay: 100,
+//     origin: 'left',
+//     interval: 100
+// });
 ScrollReveal().reveal('.home-text', {
     delay: 100,
     origin: 'zoom'

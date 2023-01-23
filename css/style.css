@@ -468,15 +468,20 @@ nav ul li a:hover {
 .titulo {
     margin: auto;
     width: 100%;
+    height: auto;
     max-width: var(--breakpoint-extra-large);
+    z-index: 20;
 }
 
 .titulo h2 {
+    position: relative;
+    top: 0px;
     font-family: 'Varela Round';
     padding: 20px 10px;
     color: #00ffc8;
     font-size: 2rem;
     font-weight: bolder;
+    z-index: 10;
 }
 
 #services {
@@ -493,10 +498,16 @@ nav ul li a:hover {
 #services .services {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
-    grid-gap: 28px;
+    grid-gap: 80px 40px;
     max-width: var(--breakpoint-extra-large);
     height: auto;
     margin: auto;
+}
+.video-background {
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
 }
 
 .card-services{
@@ -570,7 +581,12 @@ nav ul li a:hover {
     height: auto;
     margin: auto;
 }
-
+#projects .video-proj {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
 .card-proj{
     width: 320px;
     border-radius: 10px;
@@ -578,13 +594,14 @@ nav ul li a:hover {
     border: solid 1px #aaa;
     overflow: hidden;
     z-index: 10;
+    background-color: var(--color-bg);
 }
 .card-proj:hover{
     position: relative;
     border: solid 1px #000;
     box-shadow: 5px 5px 10px #000000;
     background-color: var(--color-bg);
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 12;
 }
 .card-proj .image-cover{
@@ -791,11 +808,9 @@ nav ul li a:hover {
 
 /* ================CONTACTOS==================== */
 
-
 #contact {
     background-color: rgb(15, 15, 51);
     padding: 0 20px;
-    transition: all ease-in 0.2s;
 }
 
 .contact-container {
@@ -812,7 +827,7 @@ nav ul li a:hover {
     align-items: center;
     margin-bottom: 20px;
     padding: 10px 0;
-    height: 200px;
+    height: 180px;
     width: 186px;
     border-radius: 15px;
     border: 2px solid var(--color-card-border);
@@ -820,16 +835,17 @@ nav ul li a:hover {
 }
 .contact-card:hover {
     background-image: radial-gradient(rgba(167, 6, 253, 0.24) 10%, rgba(0, 0, 255, 0.026) 80%);
+    /* background-color: #00eeff; */
 }
 .contact-card a {
     font-size: 60px;
     color: var(--color-3);
     margin-bottom: 25px;
-    transition: all ease-in 0.5s;
+    transition: all ease-in 0.3s;
 }
 .contact-card a:hover {
     position: relative;
-    top: -6px;
+    transform: translateY(-10px) scale(1.2);
 }
 .contact-card h2 {
     font-size: 18px;
@@ -974,22 +990,13 @@ footer span {
     }
    }
 
-.span1{
-    position: absolute;
-    width: 900px;
-    height: 900px;
-    top: -400px;
-    left: -400px;
-    background: radial-gradient(circle, rgba(255, 0, 212, 0.144) 0%, rgba(0, 213, 255, 0) 70%);
-    z-index: 1;
-}
 
 .span2{
     position: absolute;
-    width: 900px;
-    height: 900px;
-    bottom: -400px;
-    right: -400px;
-    background: radial-gradient(circle, rgba(0, 247, 255, 0.185) 0%, rgba(0, 213, 255, 0) 70%);
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient( #03031fad 0%, #03031fd2 70%);
     z-index: 1;
 }
