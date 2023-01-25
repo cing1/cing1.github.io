@@ -181,4 +181,11 @@
         color: var(--color-3);
         font-size: 10px;
     }
+    .close-box {
+        top: -40px;
+        right: 0px;
+    }
+    .box-modal-project {
+        width: 90%;
+    }
 }

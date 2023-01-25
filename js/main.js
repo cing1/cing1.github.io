@@ -57,11 +57,12 @@ padToggle.addEventListener('click', () => {
     padToggle.classList.toggle('bx-x');
 });
 
-// box modal
-const buttonCard = document.querySelector('.btn-card');
-buttonCard.addEventListener('click', () => {
-    modalView.classList.toggle('hide');
-})
+// // box modal
+// const buttonCard = document.querySelector('.btn-card');
+// buttonCard.addEventListener('click', () => {
+//     modalView.classList.toggle('hide');
+// })
+
 const modalView = document.querySelector('.box-modal');
 var closeBox = document.getElementById('close-box');
 closeBox.addEventListener('click', () => {
@@ -99,7 +100,6 @@ closeBox.addEventListener('click', () => {
     
 //   });
 // };
-
 
 
 

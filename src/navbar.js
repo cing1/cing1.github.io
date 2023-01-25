@@ -44,5 +44,4 @@ class menubar extends HTMLElement {
     </nav>`;
   }
 }
-
 window.customElements.define("nav-bar", menubar);
