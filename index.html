@@ -374,7 +374,6 @@
       var proj = document.getElementById("proj6");
       var imgs = proj.getElementsByClassName("imgs");
       }
-      console.log(imgs.length);
 
       var projActive = document.getElementsByClassName("projs");
 
@@ -385,7 +384,6 @@
       projActive[n-1].classList.remove("hide");
 
       var ni = 0;
-      console.log(imgs);
       for(i = 0; i<imgs.length;i++) {
         imgs[i].classList.add("imgHide");
       }
@@ -397,7 +395,6 @@
         } else {
           ni = 0;
         }
-         console.log(ni);
         imgSlide(ni);
       });
       document.getElementById("prev").addEventListener("click", function () {
@@ -406,7 +403,6 @@
         } else {
           ni = imgs.length - 1;
         }
-        console.log(ni);
         imgSlide(ni);
       });
 
@@ -423,11 +419,6 @@
         }
       }
     }
-
-  window.addEventListener("scroll", () => {
-    console.log("scrolled!!")
-  }));
-
   </script>
 
   <script src="js/main.js"></script>
