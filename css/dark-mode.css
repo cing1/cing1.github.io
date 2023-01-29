@@ -17,6 +17,9 @@
     --color-shadowl: #000000;
     --color-footerl: #2a3346;
 }
+.darkMode {
+    background: var(--color-bgl);
+}
 .darkMode .navbar{
     background-color: var(--color-nav-bgl);
     border: solid 2px var(--color-1l);
@@ -45,5 +48,4 @@
 }
 .darkMode .titulo h2{
     color: #24045c;
-
 }
