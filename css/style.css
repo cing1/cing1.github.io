@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url(../assets/boxicons.min.css);
+
 :root {
   --color-1: #0ff;
   --color-2: #6993fd;
@@ -83,6 +84,7 @@ html {
   width: 27px;
   font-size: 17px;
 }
+
 .dark-mode:hover {
   cursor: pointer;
 }
@@ -144,6 +146,7 @@ nav ul li {
   position: relative;
   padding: 0px 7px;
 }
+
 nav ul li a {
   font-family: "Varela Round", sans-serif;
   font-size: 16px;
@@ -171,6 +174,7 @@ nav ul li ul {
   transition: all 0.3s;
   z-index: 100;
 }
+
 nav ul li ul::after {
   display: none;
   position: absolute;
@@ -186,14 +190,16 @@ nav ul li ul::after {
   left: 20px;
   z-index: 100;
 }
+
 nav ul li ul a {
   margin: 5px 0;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
   display: block;
 }
-nav ul li:hover > ul::after {
+
+nav ul li:hover>ul::after {
   display: block;
 }
 
@@ -209,14 +215,17 @@ nav a::after {
   bottom: -4px;
   transition: all 0.2s ease-in-out;
 }
+
 nav li:hover a::after {
   width: 100%;
   left: 0;
 }
+
 nav ul li a:hover {
   color: var(--color-4);
   transition: 0.3s;
 }
+
 /* hover nav child */
 nav li ul a::after {
   display: none;
@@ -230,11 +239,13 @@ nav li ul a::after {
   bottom: -4px;
   transition: all 0.2s ease-in-out;
 }
+
 nav li ul li:hover a::after {
   display: block;
   width: 100%;
   left: 0;
 }
+
 nav ul li a:hover {
   color: var(--color-nav-hover);
   transition: 0.3s;
@@ -348,6 +359,7 @@ nav ul li a:hover {
   text-align: center;
   margin: 0px auto;
 }
+
 .mouse-wheel {
   height: 6px;
   margin: 2px auto 0;
@@ -359,40 +371,49 @@ nav ul li a:hover {
   -moz-animation: 1.6s ease infinite wheel-up-down;
   animation: 1.6s ease infinite wheel-up-down;
 }
+
 @-webkit-keyframes wheel-up-down {
   0% {
     margin-top: 2px;
     opacity: 0;
   }
+
   30% {
     opacity: 1;
   }
+
   100% {
     margin-top: 20px;
     opacity: 0;
   }
 }
+
 @-moz-keyframes wheel-up-down {
   0% {
     margin-top: 2px;
     opacity: 0;
   }
+
   30% {
     opacity: 1;
   }
+
   100% {
     margin-top: 20px;
     opacity: 0;
   }
 }
+
 @keyframes wheel-up-down {
   0% {
     margin-top: 2px;
     opacity: 0;
   }
+
   30% {
     opacity: 1;
   }
+
   100% {
     margin-top: 20px;
     opacity: 0;
@@ -443,6 +464,7 @@ nav ul li a:hover {
 .home-text ul {
   padding-left: 50px;
 }
+
 .home-text li {
   font-family: "Varela Round", sans-serif;
   color: var(--color-2);
@@ -493,6 +515,7 @@ nav ul li a:hover {
   margin: auto;
   justify-items: center;
 }
+
 .video-background {
   position: absolute;
   height: 100%;
@@ -511,26 +534,31 @@ nav ul li a:hover {
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
   z-index: 10;
 }
+
 .card-services:hover {
   position: relative;
   transform: scale(1.02);
   background-color: rgba(255, 255, 255, 0.05);
   border: 2px solid rgba(255, 255, 255, 0.05);
 }
+
 .card-services .card-cover {
   width: 100%;
   height: 200px;
   overflow: hidden;
 }
+
 .card-cover img {
   width: 100%;
   height: 100%;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
+
 .card-services img:hover {
   position: relative;
   transform: scale(1.2);
 }
+
 .card-title {
   position: relative;
   top: -20px;
@@ -542,6 +570,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .card-title h3 {
   font-family: "Varela Round", sans-serif;
   font-size: 15px;
@@ -572,12 +601,14 @@ nav ul li a:hover {
   margin: auto;
   justify-items: center;
 }
+
 #projects .video-proj {
   position: absolute;
   width: 100%;
   top: 0px;
   left: 0px;
 }
+
 .card-proj {
   width: 300px;
   border-radius: 10px;
@@ -587,6 +618,7 @@ nav ul li a:hover {
   z-index: 10;
   background-color: var(--color-bg);
 }
+
 .card-proj:hover {
   position: relative;
   border: solid 1px #000;
@@ -595,16 +627,19 @@ nav ul li a:hover {
   transform: scale(1.1);
   z-index: 12;
 }
+
 .card-proj .image-cover {
   height: 200px;
   background-color: #000;
   overflow: hidden;
   text-align: center;
 }
+
 .image-cover img {
   width: 100%;
   height: 200px;
 }
+
 .card-proj-footer {
   display: flex;
   flex-direction: column;
@@ -613,9 +648,11 @@ nav ul li a:hover {
   text-align: center;
   color: var(--color-2);
 }
+
 .card-footer1 img {
   height: 15px;
 }
+
 .card-proj .card-footer1 {
   display: flex;
   justify-content: space-between;
@@ -660,12 +697,15 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.897);
   z-index: 20;
 }
+
 .box-modal.hide {
   display: none;
 }
+
 .hide {
-    display: none;
+  display: none;
 }
+
 .box-modal-project {
   position: relative;
   bottom: 0px;
@@ -674,14 +714,17 @@ nav ul li a:hover {
   box-shadow: 0 0 10px #000;
   width: 60%;
 }
+
 @keyframes zoom {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 .close-box {
   position: absolute;
   top: -0px;
@@ -691,6 +734,7 @@ nav ul li a:hover {
   border-radius: 50vh;
   background-color: #656868d2;
 }
+
 .close-box .bx {
   color: #1d36e9;
   font-size: 2rem;
@@ -703,10 +747,12 @@ nav ul li a:hover {
   position: relative;
   margin: auto;
 }
+
 .mySlides {
-    border-radius: 10px;
-    height: auto;
+  border-radius: 10px;
+  height: auto;
 }
+
 .numbertext {
   color: #f2f2f2;
   font-size: 1.2rem;
@@ -715,12 +761,14 @@ nav ul li a:hover {
   text-shadow: 2px 2px #000;
   top: 0;
 }
+
 .img-slide {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
+
 .imgs {
   border-radius: 10px;
   width: 100%;
@@ -801,6 +849,7 @@ nav ul li a:hover {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -833,23 +882,25 @@ nav ul li a:hover {
   border: 2px solid var(--color-card-border);
   transition: all ease-in 0.5s;
 }
+
 .contact-card:hover {
-  background-image: radial-gradient(
-    rgba(167, 6, 253, 0.24) 10%,
-    rgba(0, 0, 255, 0.026) 80%
-  );
+  background-image: radial-gradient(rgba(167, 6, 253, 0.24) 10%,
+      rgba(0, 0, 255, 0.026) 80%);
   /* background-color: #00eeff; */
 }
+
 .contact-card a {
   font-size: 60px;
   color: var(--color-3);
   margin-bottom: 25px;
   transition: all ease-in 0.3s;
 }
+
 .contact-card a:hover {
   position: relative;
   transform: translateY(-10px) scale(1.2);
 }
+
 .contact-card h2 {
   font-size: 18px;
   color: #6b6baa;

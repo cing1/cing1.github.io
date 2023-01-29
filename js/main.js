@@ -39,10 +39,10 @@ ScrollReveal().reveal('.home-text', {
 
 
 // preloader
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-    loader.style.display = "none";
-});
+// var loader = document.getElementById("preloader");
+// window.addEventListener("load", function () {
+//     loader.style.display = "none";
+// });
 function darkMode(){
     const getDark = document.querySelector('.dark-modei');
     const darkMode = document.querySelector('body');
@@ -74,32 +74,54 @@ closeBox.addEventListener('click', () => {
 
 
 // menu state
-// var btnContainer = document.getElementById("nav");
-// var menus = btnContainer.getElementsByClassName("menu");
-// for (var i = 0; i < menus.length; i++) {
-//   menus[i].addEventListener("click", function() {
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// };
+var btnContainer = document.getElementById("nav");
+var menus = btnContainer.getElementsByClassName("menu");
+for (var i = 0; i < menus.length; i++) {
+  window.addEventListener("scroll", function() {
+    var current = document.getElementsByClassName("active");
+    console.log(current.length)
+    if (current.length > 0) {
+        for(var j=1; j < current.length; j++) {
+            current[j].className = current[j].className.replace(" active", "");
+        };
+     current[0].className = current[0].className.replace(" active", "");
+    }
+    const y = window.scrollY;
+    if(y<window.innerHeight){
+        menus[0].className += " active";
+    }
+    if(y>window.innerHeight - 80 && y<window.innerHeight+700){
+        menus[1].className += " active";
+    }
+    if(y>window.innerHeight+700 && y<window.innerHeight + 900){
+        menus[2].className += " active";
+    }
+    if(y>window.innerHeight + 1000 && y<4050){
+        menus[3].className += " active";
+    }
+});
+};
+
+
+
+
 // lib content state
-// var navList = document.getElementById("ulList");
-// var classList = navList.getElementsByClassName("list");
-// var fileContainer = navList.getElementsByClassName("fileContent")
-// for (var i = 0; i < classList.length; i++) {
-//     // console.log("i:   " + i);
-//   classList[i].addEventListener("click", function() {
-//     var currentClass = document.getElementsByClassName("activeList");
-//     currentClass[0].className = currentClass[0].className.replace(" activeList", "");
-//     this.className += " activeList";
-//     var currentClass2 = document.getElementsByClassName("activeFileContent");
-//     console.log(i);
-//     currentClass2[0].className = currentClass2[0].className.replace(" activeFileContent", "");
-//     // fileContainer[i].className = fileContainer[i].className.add(" activeFileContent");
+var navList = document.getElementById("ulList");
+var classList = navList.getElementsByClassName("list");
+var fileContainer = navList.getElementsByClassName("fileContent")
+for (var i = 0; i < classList.length; i++) {
+    // console.log("i:   " + i);
+  classList[i].addEventListener("click", function() {
+    var currentClass = document.getElementsByClassName("activeList");
+    currentClass[0].className = currentClass[0].className.replace(" activeList", "");
+    this.className += " activeList";
+    var currentClass2 = document.getElementsByClassName("activeFileContent");
+    console.log(i);
+    currentClass2[0].className = currentClass2[0].className.replace(" activeFileContent", "");
+    // fileContainer[i].className = fileContainer[i].className.add(" activeFileContent");
     
-//   });
-// };
+  });
+};
 
 
 

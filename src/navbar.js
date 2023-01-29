@@ -12,10 +12,10 @@ class menubar extends HTMLElement {
       </div>
       <div class="nav nav-menu-visible">
         <ul id="nav" class="navbarli">
-          <li><a class="menu active" href="https://cing1.github.io/">Inicio</a></li>
-          <li><a class="menu" href="https://cing1.github.io/#services">Servicios</a></li>
-          <li><a class="menu" href="https://cing1.github.io/#projects">Proyectos</a></li>
-          <li><a class="menu" href="https://cing1.github.io/#contact">Contacto</a></li>
+          <li><a class="menu" href="https://cing1.github.io/">Inicio</a></li>
+          <li><a class="menu" href="#services">Servicios</a></li>
+          <li><a class="menu" href="#projects">Proyectos</a></li>
+          <li><a class="menu" href="#contact">Contacto</a></li>
           <li><a class="menu" id="mi-blog" href="https://cing1.github.io/blog">Blog</a></li>
           <li><a class="menu" href="https://cing1.github.io/portfolio/mario_cesgo_soliz" target="_blank">Portfolio</a></li>
           <li>
