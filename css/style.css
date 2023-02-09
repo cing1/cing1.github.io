@@ -104,7 +104,7 @@ html {
   box-shadow: 0 0 10px var(--color-1);
   backdrop-filter: blur(5px);
   z-index: 20;
-  transition: all ease-in 0.2s;
+  transition: all ease-in 0.5s;
 }
 
 .logo {
@@ -428,6 +428,7 @@ nav ul li a:hover {
   background-image: url(../img/bg-03.png);
   background-size: 100% 100%;
   background-position: center;
+  transition: .5s ease-in;
 }
 
 .banner {
@@ -501,7 +502,7 @@ nav ul li a:hover {
   max-width: 100%;
   padding: 0px 20px;
   padding-bottom: 20px;
-  transition: all ease-in 0.2s;
+  transition: all ease-in 0.5s;
   overflow: hidden;
 }
 
@@ -585,7 +586,7 @@ nav ul li a:hover {
   padding: 0 20px;
   padding-bottom: 100px;
   justify-content: center;
-  transition: all ease-in 0.2s;
+  transition: all ease-in 0.5s;
   overflow: hidden;
 }
 
@@ -1046,4 +1047,5 @@ footer span {
   left: 0px;
   background: linear-gradient(#03031fad 0%, #03031fd2 70%);
   z-index: 1;
+  transition: all .5s ease-in;
 }
