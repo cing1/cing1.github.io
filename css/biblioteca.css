@@ -4,10 +4,14 @@ html{
 #nav li .menu.active{
     color: var(--color-nav);
 }
+#body {
+    background-color: var(--color-bg);
+    transition: ease-in 2s;
+}
 #library-section {
     width: 100%;
     height: auto;
-    background-color: var(--color-bg);
+    /* background-color: var(--color-bg); */
     padding-top: 115px;
 }
 .nav-menu-bar-lib{
@@ -23,6 +27,7 @@ html{
     top: 43px;
     width: 100%;
     padding: 5px 0;
+    background-color: var(--color-bg);
 }
 
 .head .title h1 {

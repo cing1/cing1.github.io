@@ -43,6 +43,8 @@ ScrollReveal().reveal('.home-text', {
 // window.addEventListener("load", function () {
 //     loader.style.display = "none";
 // });
+
+// darkMode
 function darkMode(){
     const getDark = document.querySelector('.dark-modei');
     const darkMode = document.querySelector('body');
