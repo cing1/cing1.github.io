@@ -61,7 +61,7 @@ html{
 .libList {
     position: relative;
     top: 0px;
-    height: 380px;
+    height: 400px;
     border-radius: 10px;
     border: solid 2px var(--color-card-border);
     background-color: rgba(3, 0, 14, 0.856);
