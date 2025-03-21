@@ -106,24 +106,6 @@ for (var i = 0; i < menus.length; i++) {
 
 
 
-// lib content state
-// var navList = document.getElementById("ulList");
-// var classList = navList.getElementsByClassName("list");
-// var fileContainer = navList.getElementsByClassName("fileContent")
-// for (var i = 0; i < classList.length; i++) {
-//     // console.log("i:   " + i);
-//   classList[i].addEventListener("click", function() {
-//     var currentClass = document.getElementsByClassName("activeList");
-//     currentClass[0].className = currentClass[0].className.replace(" activeList", "");
-//     this.className += " activeList";
-//     var currentClass2 = document.getElementsByClassName("activeFileContent");
-//     console.log(i);
-//     currentClass2[0].className = currentClass2[0].className.replace(" activeFileContent", "");
-//     // fileContainer[i].className = fileContainer[i].className.add(" activeFileContent");
-    
-//   });
-// };
-
 
 
 
