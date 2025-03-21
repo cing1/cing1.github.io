@@ -16,7 +16,7 @@ class menubar extends HTMLElement {
           <li><a class="menu" href="https://cing1.github.io/#services">Servicios</a></li>
           <li><a class="menu" href="https://cing1.github.io/#projects">Proyectos</a></li>
           <li><a class="menu" href="https://cing1.github.io/#contact">Contacto</a></li>
-          <li><a class="menu" id="mi-blog" href="https://cing1.github.io/blog">Blog</a></li>
+          <li><a class="menu" id="mi-blog" href="https://cing1.github.io/pages/blog.html">Blog</a></li>
           <li><a class="menu" href="https://cing1.github.io/pages/portfolio/mario_cesgo_soliz.html" target="_blank">Portfolio</a></li>
           <li>
             <a class='menu' id='recursos' href="#">Recursos</a>
