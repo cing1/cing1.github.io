@@ -5,7 +5,8 @@ ScrollReveal({
     reset: true,
     distance: '60px',
     duration: 1500,
-    delay: 100
+    delay: 100,
+    reset: true
 });
 // ScrollReveal().reveal('.titulo', {
 //     delay: 200,
@@ -14,26 +15,26 @@ ScrollReveal({
 ScrollReveal().reveal('.card-services', {
     delay: 100,
     origin: 'bottom',
-    interval: 100
+    interval: 100,
+    reset: true
 });
 ScrollReveal().reveal('.card-proj', {
     delay: 100,
     origin: 'bottom',
-    interval:  100
+    interval:  100,
+    reset: true
 });
 ScrollReveal().reveal('.blog-card', {
     delay: 100,
     origin: 'bottom',
-    interval: 100
+    interval: 100,
+    reset: true
 });
-// ScrollReveal().reveal('.contact-card', {
-//     delay: 100,
-//     origin: 'left',
-//     interval: 100
-// });
+
 ScrollReveal().reveal('.home-text', {
     delay: 100,
-    origin: 'zoom'
+    origin: 'zoom',
+    reset: true
 });
 
 
@@ -58,19 +59,6 @@ padToggle.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-visible');
     padToggle.classList.toggle('bx-x');
 });
-
-// // box modal
-// const buttonCard = document.querySelector('.btn-card');
-// buttonCard.addEventListener('click', () => {
-//     modalView.classList.toggle('hide');
-// })
-
-const modalView = document.querySelector('.box-modal');
-var closeBox = document.getElementById('close-box');
-closeBox.addEventListener('click', () => {
-    modalView.classList.toggle('hide');
-})
-
 
 
 
