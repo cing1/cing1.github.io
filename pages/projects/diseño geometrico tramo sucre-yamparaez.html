@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto| Diseño Geométrico de Carretera tramo Sucre-Yamparaez</title>
+
+</head>
+<body>
+    <header>
+        <img src="../../public/images/logo.png" alt="Logo de la Empresa" class="logo">
+        <div class="empresa">CING  Ingeniería</div>
+        
+    </header>
+
+    <section class="galeria-container">
+        <div class="galeria-titulo">Carretera tramo Sucre-Yamparaez</div>
+        <div class="galeria-info">Fecha: 9 de septiembre de 2024</div>
+        <div class="galeria-descripcion">El diseño geometrico se realizó en Civil 3D</div>
+        <div class="galeria">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/01.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/02.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/03.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/04.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/05.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/06.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/07.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/08.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/09.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/010.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+            <img src="../../public/images/proyectos/tramo doble via sucre-yamparaez/011.png" loading="lazy" alt="Imagen 1" onclick="mostrarImagen(this)">
+  
+
+        </div>
+    </section>
+
+    <div class="modal" id="modal" onclick="cerrarModal()">
+        <img id="imagenModal" src="">
+    </div>
+
+    <footer>
+        &copy; 2025 CING Ingeniería. Todos los derechos reservados.
+    </footer>
+
+    <script>
+      function mostrarImagen(img) {
+          document.getElementById("imagenModal").src = img.src;
+          document.getElementById("modal").classList.add("show");
+          document.querySelector("header").classList.add("hidden"); // Oculta el header
+      }
+  
+      function cerrarModal() {
+          document.getElementById("modal").classList.remove("show");
+          document.querySelector("header").classList.remove("hidden"); // Muestra el header
+      }
+  </script>
+  <style>
+    :root {
+        --color-bg: #0b0b24;
+        --color-nav-bg: #11002e;
+        --color-shadow: #000000;
+        --color-footer: #04040c;
+    }
+  
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--color-bg);
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+  
+    header {
+    background-color: rgba(17, 0, 46, 0.8); /* Color de fondo semi-transparente */
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 4px 6px var(--color-shadow);
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all ease-in 0.5s;
+}
+  
+    .logo {
+        width: 50px;
+        height: auto;
+    }
+  
+    .empresa {
+        font-size: 24px;
+        font-weight: bold;
+    }
+  
+    .galeria-container {
+        text-align: center;
+        padding: 20px;
+        margin-top: 80px;}
+  
+    .galeria-titulo {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+  
+    .galeria-info {
+        font-size: 16px;
+        color: #ccc;
+    }
+  
+    .galeria-descripcion {
+        font-size: 14px;
+        color: #bbb;
+        margin-bottom: 20px;
+    }
+  
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+  
+    .galeria img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px var(--color-shadow);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+  
+    .galeria img:hover {
+        transform: scale(1.05);
+    }
+  
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .modal img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 8px;
+    }
+  
+    .modal.show {
+        display: flex;
+    }
+  
+    footer {
+        background-color: var(--color-footer);
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .hidden {
+        display: none; /* Oculta el header */
+    }
+  </style>
+</body>
+
+</html>
