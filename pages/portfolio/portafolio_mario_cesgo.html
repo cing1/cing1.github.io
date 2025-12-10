@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Cesgo Soliz - Ingeniero Civil</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Hola, mi nombre es: Mario Cesgo Soliz</h1>
+        <h1><span>Ingeniero Civil</span></h1>
+        <p>Proyectos civiles, Diseños estructurales, BIM y más !!!</p>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#competencias">Competencias</a>
+            <a href="#curriculum">Currículum Vitae</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        
+        <button id="modoOscuroBtn" class="nav-btn">Modo ☀️</button>
+    </nav>
+    
+    <section id="sobre-mi" class="container">
+            <h2>👷‍♂️ Sobre mí</h2>
+            <img src="./img/perfil/foto_perfil.jpg" alt="foto de perfil" class="foto-perfil" />
+            <p>Egresado de la carrera Ingeniería Civil-USFX con sólidos conocimientos en diseños estructurales, hidrosanitarios y carreteras. Manejo avanzado del AutoCad Civil3D y Revit BIM. Con bastante conocimiento en la elaboración de análisis de precios unitarios y procesos constructivos. Me apasiona crear soluciones eficientes, modernas y tecnológicas.</p>
+        </div>
+    </section>
+
+    <section id="proyectos" class="container">
+        <h2>🏗️ Mis proyectos</h2>
+        <div class="contador-proyectos">
+            <p>Total de proyectos: <strong id="total-proyectos">0</strong></p>
+        </div>
+        
+        <div class="controles-proyectos">
+            <div class="filtros-container">
+                <button class="filtro-btn active" data-mencion="todos">Todos</button>
+                <button class="filtro-btn" data-mencion="estructural">Estructural</button>
+                <button class="filtro-btn" data-mencion="carreteras">Carreteras</button>
+                <button class="filtro-btn" data-mencion="sanitaria">Sanitaria</button>
+                <button class="filtro-btn" data-mencion="hidráulica">Hidráulica</button>
+            </div>
+            
+            <div class="ordenacion-container">
+                <label for="ordenar">Ordenar por fecha:</label>
+                <select id="ordenar">
+                    <option value="reciente">📅 Más reciente</option>
+                    <option value="antiguo">🗓️ Más antiguo</option>
+                </select>
+            </div>
+            
+            <div class="buscador-container">
+                <input type="text" id="buscador" placeholder="🔍 Buscar proyectos por nombre, descripción o etiquetas..." />
+            </div>
+        </div>
+
+        <div id="lista-proyectos"></div>
+    </section>
+
+    <section id="competencias" class="container">
+        <h2>💼 Competencias</h2>
+        
+        <!-- Aptitudes Técnicas -->
+        <div class="competencia-section">
+            <h3>🔧 Aptitudes Técnicas</h3>
+            <ul class="competencia-list">
+                <li>Diseño arquitectónico y estructural en entornos BIM</li>
+                <li>Modelado de instalaciones MEP</li>
+                <li>Elaboración de planos constructivos</li>
+                <li>Elaboración de análisis de precios unitarios</li>
+                <li>Programación y Desarrollo de software</li>
+            </ul>
+        </div>
+
+        <!-- Software -->
+        <div class="competencia-section">
+            <h3>💻 Software</h3>
+            <div class="software-grid">
+                <span class="software-badge">AutoCAD 2D-3D</span>
+                <span class="software-badge">Revit (BIM)</span>
+                <span class="software-badge">Excel Avanzado</span>
+                <span class="software-badge">Civil 3D</span>
+                <span class="software-badge">Infraworks</span>
+                <span class="software-badge">Robot Structural</span>
+                <span class="software-badge">SAP 2000</span>
+                <span class="software-badge">ETABS</span>
+                <span class="software-badge">CS Bridge</span>
+                <span class="software-badge">MathCad</span>
+                <span class="software-badge">Project</span>
+                <span class="software-badge">Prescom</span>
+                <span class="software-badge">Navisworks</span>
+                <span class="software-badge">Epanet</span>
+                <span class="software-badge">Synchro Traffic</span>
+                <span class="software-badge">Python</span>
+                <span class="software-badge">JavaScript</span>
+            </div>
+        </div>
+
+        <!-- Idiomas -->
+        <div class="competencia-section">
+            <h3>🌍 Idiomas</h3>
+            <ul class="competencia-list">
+                <li><strong>Español</strong> – Nativo</li>
+                <li><strong>Inglés</strong> – Intermedio</li>
+                <li><strong>Quechua</strong> – Nativo</li>
+            </ul>
+        </div>
+
+        <!-- Licencia -->
+        <div class="competencia-section">
+            <h3>🚗 Otros</h3>
+            <ul class="competencia-list">
+                <li>Licencia de conducir categoría A</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="curriculum" class="container">
+        <div class="curriculum-card">
+            <h2>📄 Currículum Vitae</h2>
+            <p>Descarga mi currículum vitae completo en formato PDF</p>
+            
+            <div class="curriculum-download">
+                <a href="./CV_Mario_Cesgo.pdf" download class="btn-download">
+                    <span class="icon">📥</span>
+                    <span>Descargar CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container">
+        <div class="card contact-card">
+            <h2>🤝 Contacto</h2>
+            <p>Contáctame a través de:</p>
+            
+            <div class="contact-links-grid">
+                
+                <a href="mailto:mariocs855@gmail.com" class="contact-link email-link">
+                    <span class="icon">📧</span>
+                    <span>mariocs855@gmail.com</span>
+                </a>
+                
+                <a href="https://wa.me/59174446236" target="_blank" class="contact-link whatsapp-link">
+                    <span class="icon">📱</span>
+                    <span>WhatsApp (+591 74446236)</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/mariocesgo/" target="_blank" class="contact-link linkedin-link">
+                    <span class="icon">🔗</span>
+                    <span>LinkedIn /in/mariocesgo/</span>
+                </a>
+                
+                <a href="https://www.facebook.com/mario.cesgo.soliz/" target="_blank" class="contact-link facebook-link">
+                    <span class="icon">📘</span>
+                    <span>Facebook</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Portafolio Personal</p>
+        <p>Mario Cesgo Soliz</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
